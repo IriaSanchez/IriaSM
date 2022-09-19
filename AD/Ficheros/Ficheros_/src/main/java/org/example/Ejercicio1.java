@@ -3,22 +3,22 @@ package org.example;
 import java.io.File;
 import java.io.IOException;
 
-public class Main {
+public class Ejercicio1 {
 
     public static void main(String[] args) throws IOException {
 
 
-           //Creamos el primer directorio. Si existe, nos imprime el nombre:
+        //Creamos el primer directorio. Si existe, nos imprime el nombre:
 
-            File primer_directorio = new File("C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\AD\\Ficheros\\Directorios\\primer_directorio");
+        File primer_directorio = new File("C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\AD\\Ficheros\\Directorios\\primer_directorio");
 
-            if (primer_directorio.exists()) {
-                System.out.println("Ya existe" + primer_directorio.getName());
-            } else {
-                primer_directorio.mkdir();
-            }
+        if (primer_directorio.exists()) {
+            System.out.println("Ya existe" + primer_directorio.getName());
+        } else {
+            primer_directorio.mkdir();
+        }
 
-            //Creamos el segundo directorio.  Si existe, nos imprime el nombre:
+        //Creamos el segundo directorio.  Si existe, nos imprime el nombre:
 
         File segundo_directorio = new File("C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\AD\\Ficheros\\Directorios\\segundo_directorio");
 
@@ -70,5 +70,9 @@ public class Main {
         } else {
             cuarto_fichero.createNewFile();
         }
+
+
     }
+
+    
 }
