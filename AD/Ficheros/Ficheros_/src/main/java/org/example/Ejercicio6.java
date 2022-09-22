@@ -19,40 +19,46 @@ public class Ejercicio6 {
 
     public static void main(String[] args) throws IOException {
 
-        class Alumno {
+        //Creamos ArrayList:
 
-            private char Nombre;
-            private int Edad;
-            private double NotaMedia;
+        ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 
-            public Alumno() {
+        //Añadimos datos al ArrayList:
 
-                ArrayList Alumno = new ArrayList();
+        alumnos.add(new Alumno("Maria     ", 22, 5.5));
+        alumnos.add(new Alumno("Juan      ", 20, 9.5));
+        alumnos.add(new Alumno("Pepe      ", 18, 6.6));
 
-                Alumno.add("Maria,22,5.5");
-                Alumno.add("Juan,20,9.5");
-                Alumno.add("Pepe, 18, 6.6");
 
-                for (int x = 0; x < Alumno.size(); x++) {
-
-                    String Alumnos = (String) Alumno.get(x);
-                    System.out.println(Alumnos);
-                }
-            }
-
-        }
+        //Creamos el fichero Random:
 
         RandomAccessFile fichero = null;
 
+
         try {
 
-            //fichero = new RandomAccessFile(Alumno);
+            fichero = new RandomAccessFile("C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\AD\\Ejercicio6.txt", "rw");
 
-        } catch (Exception e) {
+            //ArrayList de tipo Alumno, recorre cada posicion (alumno) y dos puntos mas nombre del ArrayList que queremos recorrer
+
+            for (Alumno alumno : alumnos) {
+                
+
+            }
+
+
+        } catch (
+                Exception e) {
             e.printStackTrace();
+        } finally {
+
+            fichero.close();
         }
     }
 }
+
+
+//Recorremos el ArrayList
 
 
 //
