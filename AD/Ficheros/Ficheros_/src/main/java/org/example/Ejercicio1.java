@@ -71,8 +71,8 @@ public class Ejercicio1 {
             cuarto_fichero.createNewFile();
         }
 
-
+        
     }
 
-    
+
 }
