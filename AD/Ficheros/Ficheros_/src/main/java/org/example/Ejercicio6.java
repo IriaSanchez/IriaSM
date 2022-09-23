@@ -42,14 +42,25 @@ public class Ejercicio6 {
             //ArrayList de tipo Alumno, recorre cada posicion (alumno) y dos puntos mas nombre del ArrayList que queremos recorrer
 
             for (Alumno alumno : alumnos) {
-                
+
+                fichero.writeChars(alumno.getNombre());
+                fichero.writeInt(alumno.getEdad());
+                fichero.writeDouble(alumno.getNotaMedia());
 
             }
 
+            fichero.seek(19 * (2 - 1));
 
+            String nombre = "";
+
+            for (int i = 0; i < 11; i++) {
+
+                nombre += fichero.readChar();
+            }
         } catch (
                 Exception e) {
             e.printStackTrace();
+
         } finally {
 
             fichero.close();
@@ -58,13 +69,4 @@ public class Ejercicio6 {
 }
 
 
-//Recorremos el ArrayList
-
-
-//
-//        try {
-//
-//        } catch (Exception e) {
-//        e.printStackTrace();
-//        }
 
