@@ -9,3 +9,6 @@ C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEje
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.csproj.CoreCompileInputs.cache
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.exe
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.pdb
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio_1.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio2.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio3.resources

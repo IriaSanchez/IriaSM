@@ -67,5 +67,39 @@ namespace WFEjercicios
            
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Ejercicio_1 ejercicio_1 = new Ejercicio_1();
+            ejercicio_1.ShowDialog();           
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Ejercicio2 ejercicio2 = new Ejercicio2();
+            ejercicio2.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Ejercicio3 ejercicio3 = new Ejercicio3();
+            ejercicio3.ShowDialog();
+        }
     }
 }

@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fiatRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiatRojo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seatNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seatNegro.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fiatBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiatBlanco.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seatRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seatRojo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ferrariNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ferrariNegro.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fiatNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiatNegro.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ferrariRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ferrariRojo.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ferrariBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ferrariBlanco.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seatBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seatBlanco.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
