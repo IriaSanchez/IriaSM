@@ -43,27 +43,33 @@ public class Ejercicio6 {
 
             for (Alumno alumno : alumnos) {
 
-                fichero.writeChars(alumno.getNombre());
-                fichero.writeInt(alumno.getEdad());
-                fichero.writeDouble(alumno.getNotaMedia());
+                fichero.writeChars(alumno.getNombre()); //Cada char ocupa 2 bytes y tengo 10 chars, el calculo sería 20
+                fichero.writeInt(alumno.getEdad()); //Ocupa 4
+                fichero.writeDouble(alumno.getNotaMedia()); // Ocupa 8
 
             }
 
-            fichero.seek(19 * (2 - 1));
+            fichero.seek(32);
 
             String nombre = "";
 
-            for (int i = 0; i < 11; i++) {
+            for (int i = 0; i < 10; i++) {
 
                 nombre += fichero.readChar();
             }
+
+            int edad = fichero.readInt();
+            double notaMedia = fichero.readDouble();
+
+            String resultado = nombre + "-" + edad + "-" + notaMedia;
+            System.out.println(resultado);
         } catch (
                 Exception e) {
             e.printStackTrace();
 
         } finally {
 
-            fichero.close();
+            if (fichero != null) fichero.close();
         }
     }
 }
