@@ -72,54 +72,42 @@ namespace WFEjercicios
 
         private void elegirCoche()
         {
-            if (rbFiat.Checked)
-            {
+            if (rbFiat.Checked){
 
-                if (rbBlanco.Checked)
-                {
+                if (rbBlanco.Checked){
                     pbCoches.Image = Resources.fiatBlanco;
-                }
-                if (rbNegro.Checked)
-                {
+
+                }if (rbNegro.Checked){
                     pbCoches.Image = Resources.fiatNegro;
-                }
-                if (rbRojo.Checked)
-                {
+
+                }if (rbRojo.Checked){
                     pbCoches.Image = Resources.fiatRojo;
                 }
             }
 
 
-            if (rbFerrari.Checked)
-            {
+            if (rbFerrari.Checked){
 
-                if (rbBlanco.Checked)
-                {
+                if (rbBlanco.Checked){
                     pbCoches.Image = Resources.ferrariBlanco;
-                }
-                if (rbNegro.Checked)
-                {
+
+                }if (rbNegro.Checked){
                     pbCoches.Image = Resources.ferrariNegro;
-                }
-                if (rbRojo.Checked)
-                {
+
+                }if (rbRojo.Checked){
                     pbCoches.Image = Resources.ferrariRojo;
                 }
             }
 
-            if (rbSeat.Checked)
-            {
+            if (rbSeat.Checked){
 
-                if (rbBlanco.Checked)
-                {
+                if (rbBlanco.Checked){
                     pbCoches.Image = Resources.seatBlanco;
-                }
-                if (rbNegro.Checked)
-                {
+
+                }if (rbNegro.Checked){
                     pbCoches.Image = Resources.seatNegro;
-                }
-                if (rbRojo.Checked)
-                {
+
+                }if (rbRojo.Checked){
                     pbCoches.Image = Resources.seatRojo;
                 }
             }
