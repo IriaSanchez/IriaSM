@@ -27,7 +27,7 @@ namespace WFEjercicios
            this.panel2.BackColor = Color.Chocolate;
            this.panel3.BackColor = Color.DarkViolet;
            this.panel4.BackColor = Color.Indigo;
-           this.button1.Text = "Salir";
+           this.btSalir.Text = "Salir";
 
 
         }
@@ -78,7 +78,7 @@ namespace WFEjercicios
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Boton1_Click(object sender, EventArgs e)
         {
             Ejercicio_1 ejercicio_1 = new Ejercicio_1();
             ejercicio_1.ShowDialog();           
@@ -90,16 +90,33 @@ namespace WFEjercicios
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Boton2_Click(object sender, EventArgs e)
         {
             Ejercicio2 ejercicio2 = new Ejercicio2();
             ejercicio2.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Boton3_Click(object sender, EventArgs e)
         {
             Ejercicio3 ejercicio3 = new Ejercicio3();
             ejercicio3.ShowDialog();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Boton4_Click(object sender, EventArgs e)
+        {
+           Ejercicio4 ejercicio4 = new Ejercicio4();
+            ejercicio4.ShowDialog();    
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Ejercicio5 ejercicio5 = new Ejercicio5();
+            ejercicio5.ShowDialog();
         }
     }
 }

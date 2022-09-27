@@ -30,21 +30,21 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btEjercicio7 = new System.Windows.Forms.Button();
+            this.btEjercicio6 = new System.Windows.Forms.Button();
+            this.btEjercicio5 = new System.Windows.Forms.Button();
+            this.Boton4 = new System.Windows.Forms.Button();
+            this.Boton1 = new System.Windows.Forms.Button();
+            this.Boton2 = new System.Windows.Forms.Button();
+            this.Boton3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btSalir = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,65 +64,17 @@
             this.panel2.Size = new System.Drawing.Size(200, 382);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(200, 382);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(724, 100);
-            this.panel3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(624, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(724, 282);
-            this.panel4.TabIndex = 3;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Brown;
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Ejercicio 1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.button8, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btEjercicio7, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btEjercicio6, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btEjercicio5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Boton4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Boton1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Boton2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Boton3, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -138,75 +90,129 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // button3
+            // btEjercicio7
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Brown;
-            this.button3.Location = new System.Drawing.Point(3, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 39);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Ejercicio 3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btEjercicio7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEjercicio7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEjercicio7.ForeColor = System.Drawing.Color.Brown;
+            this.btEjercicio7.Location = new System.Drawing.Point(3, 273);
+            this.btEjercicio7.Name = "btEjercicio7";
+            this.btEjercicio7.Size = new System.Drawing.Size(139, 39);
+            this.btEjercicio7.TabIndex = 6;
+            this.btEjercicio7.Text = "Ejercicio 7";
+            this.btEjercicio7.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btEjercicio6
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Brown;
-            this.button4.Location = new System.Drawing.Point(3, 48);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 39);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Ejercicio 2";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btEjercicio6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEjercicio6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEjercicio6.ForeColor = System.Drawing.Color.Brown;
+            this.btEjercicio6.Location = new System.Drawing.Point(3, 228);
+            this.btEjercicio6.Name = "btEjercicio6";
+            this.btEjercicio6.Size = new System.Drawing.Size(139, 39);
+            this.btEjercicio6.TabIndex = 5;
+            this.btEjercicio6.Text = "Ejercicio 6";
+            this.btEjercicio6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btEjercicio5
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Brown;
-            this.button5.Location = new System.Drawing.Point(3, 138);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 39);
-            this.button5.TabIndex = 3;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btEjercicio5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEjercicio5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEjercicio5.ForeColor = System.Drawing.Color.Brown;
+            this.btEjercicio5.Location = new System.Drawing.Point(3, 183);
+            this.btEjercicio5.Name = "btEjercicio5";
+            this.btEjercicio5.Size = new System.Drawing.Size(139, 39);
+            this.btEjercicio5.TabIndex = 4;
+            this.btEjercicio5.Text = "Ejercicio 5";
+            this.btEjercicio5.UseVisualStyleBackColor = true;
+            this.btEjercicio5.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button6
+            // Boton4
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Brown;
-            this.button6.Location = new System.Drawing.Point(3, 183);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(139, 39);
-            this.button6.TabIndex = 4;
-            this.button6.UseVisualStyleBackColor = true;
+            this.Boton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Boton4.ForeColor = System.Drawing.Color.Brown;
+            this.Boton4.Location = new System.Drawing.Point(3, 138);
+            this.Boton4.Name = "Boton4";
+            this.Boton4.Size = new System.Drawing.Size(139, 39);
+            this.Boton4.TabIndex = 3;
+            this.Boton4.Text = "Ejercicio 4";
+            this.Boton4.UseVisualStyleBackColor = true;
+            this.Boton4.Click += new System.EventHandler(this.Boton4_Click);
             // 
-            // button7
+            // Boton1
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Brown;
-            this.button7.Location = new System.Drawing.Point(3, 228);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 39);
-            this.button7.TabIndex = 5;
-            this.button7.UseVisualStyleBackColor = true;
+            this.Boton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Boton1.ForeColor = System.Drawing.Color.Brown;
+            this.Boton1.Location = new System.Drawing.Point(3, 3);
+            this.Boton1.Name = "Boton1";
+            this.Boton1.Size = new System.Drawing.Size(139, 39);
+            this.Boton1.TabIndex = 0;
+            this.Boton1.Text = "Ejercicio 1";
+            this.Boton1.UseVisualStyleBackColor = true;
+            this.Boton1.Click += new System.EventHandler(this.Boton1_Click);
             // 
-            // button8
+            // Boton2
             // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Brown;
-            this.button8.Location = new System.Drawing.Point(3, 273);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(139, 39);
-            this.button8.TabIndex = 6;
-            this.button8.UseVisualStyleBackColor = true;
+            this.Boton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Boton2.ForeColor = System.Drawing.Color.Brown;
+            this.Boton2.Location = new System.Drawing.Point(3, 48);
+            this.Boton2.Name = "Boton2";
+            this.Boton2.Size = new System.Drawing.Size(139, 39);
+            this.Boton2.TabIndex = 2;
+            this.Boton2.Text = "Ejercicio 2";
+            this.Boton2.UseVisualStyleBackColor = true;
+            this.Boton2.Click += new System.EventHandler(this.Boton2_Click);
+            // 
+            // Boton3
+            // 
+            this.Boton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Boton3.ForeColor = System.Drawing.Color.Brown;
+            this.Boton3.Location = new System.Drawing.Point(3, 93);
+            this.Boton3.Name = "Boton3";
+            this.Boton3.Size = new System.Drawing.Size(139, 39);
+            this.Boton3.TabIndex = 1;
+            this.Boton3.Text = "Ejercicio 3";
+            this.Boton3.UseVisualStyleBackColor = true;
+            this.Boton3.Click += new System.EventHandler(this.Boton3_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btSalir);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(200, 382);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(724, 100);
+            this.panel3.TabIndex = 2;
+            // 
+            // btSalir
+            // 
+            this.btSalir.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btSalir.Location = new System.Drawing.Point(624, 0);
+            this.btSalir.Name = "btSalir";
+            this.btSalir.Size = new System.Drawing.Size(100, 100);
+            this.btSalir.TabIndex = 0;
+            this.btSalir.Text = "SALIR";
+            this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(724, 282);
+            this.panel4.TabIndex = 3;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // FPrincipal
             // 
@@ -226,8 +232,8 @@
             this.Load += new System.EventHandler(this.FPrincipal_Load);
             this.BackColorChanged += new System.EventHandler(this.FPrincipal_BackColorChanged);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -238,15 +244,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btSalir;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Boton1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btEjercicio7;
+        private System.Windows.Forms.Button btEjercicio6;
+        private System.Windows.Forms.Button btEjercicio5;
+        private System.Windows.Forms.Button Boton4;
+        private System.Windows.Forms.Button Boton2;
+        private System.Windows.Forms.Button Boton3;
     }
 }
