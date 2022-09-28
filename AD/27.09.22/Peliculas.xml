@@ -1,0 +1,12 @@
+<PELICULAS>
+  <PELICULA>
+    <NOMBRE>Forrest Gump</NOMBRE>
+    <DIRECTOR>Robert Zemeckis</DIRECTOR>
+    <PROTAGONISTA>Tom Hanks</PROTAGONISTA>
+  </PELICULA>
+  <PELICULA>
+    <NOMBRE>Malditos Bastardos</NOMBRE>
+    <DIRECTOR>Tarantino</DIRECTOR>
+    <PROTAGONISTA>Bradd Pitt</PROTAGONISTA>
+  </PELICULA>
+</PELICULAS>
