@@ -16,3 +16,4 @@ C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEje
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\Interop.WMPLib.dll
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.csproj.ResolveComReference.cache
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio5.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio6.resources

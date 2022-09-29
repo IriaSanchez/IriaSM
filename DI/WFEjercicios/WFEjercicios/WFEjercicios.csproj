@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Ejercicio5.resx">
       <DependentUpon>Ejercicio5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicio6.resx">
+      <DependentUpon>Ejercicio6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>
     </EmbeddedResource>

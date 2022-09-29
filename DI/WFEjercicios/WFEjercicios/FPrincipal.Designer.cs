@@ -113,6 +113,7 @@
             this.btEjercicio6.TabIndex = 5;
             this.btEjercicio6.Text = "Ejercicio 6";
             this.btEjercicio6.UseVisualStyleBackColor = true;
+            this.btEjercicio6.Click += new System.EventHandler(this.btEjercicio6_Click);
             // 
             // btEjercicio5
             // 
