@@ -52,7 +52,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 100);
+            this.panel1.Size = new System.Drawing.Size(1022, 100);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -61,7 +61,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 382);
+            this.panel2.Size = new System.Drawing.Size(200, 426);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -101,6 +101,7 @@
             this.btEjercicio7.TabIndex = 6;
             this.btEjercicio7.Text = "Ejercicio 7";
             this.btEjercicio7.UseVisualStyleBackColor = true;
+            this.btEjercicio7.Click += new System.EventHandler(this.btEjercicio7_Click);
             // 
             // btEjercicio6
             // 
@@ -184,15 +185,15 @@
             // 
             this.panel3.Controls.Add(this.btSalir);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(200, 382);
+            this.panel3.Location = new System.Drawing.Point(200, 426);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(724, 100);
+            this.panel3.Size = new System.Drawing.Size(822, 100);
             this.panel3.TabIndex = 2;
             // 
             // btSalir
             // 
             this.btSalir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btSalir.Location = new System.Drawing.Point(624, 0);
+            this.btSalir.Location = new System.Drawing.Point(722, 0);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(100, 100);
             this.btSalir.TabIndex = 0;
@@ -205,7 +206,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(200, 100);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(724, 282);
+            this.panel4.Size = new System.Drawing.Size(822, 326);
             this.panel4.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -220,7 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(924, 482);
+            this.ClientSize = new System.Drawing.Size(1022, 526);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
