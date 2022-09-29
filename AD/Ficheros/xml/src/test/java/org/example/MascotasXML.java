@@ -68,11 +68,12 @@ public class MascotasXML {
 
                 //Recuperar el dato genero
                 Node nodoGenero = elemento.getElementsByTagName("genero").item(0);
-                String valGenero = nodoGenero.getTextContent();
+                String valGenero = "";
 
 
 
                 if (nodoGenero == null){
+                    valGenero = ("indefinido");
 
                     System.out.println("No tiene género");
 
@@ -81,7 +82,7 @@ public class MascotasXML {
                     System.out.println("Genero = " + valGenero);
 
                 }
-                
+
                 //Se crea un nuevo objeto de tipo Mascota
                 Mascota objeto = new Mascota(valNombre, valTipo, valEdad, valGenero);
                 //Se van añadiendo datos al nuevo arraylist (arrayMascotas)
