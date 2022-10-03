@@ -14,6 +14,9 @@ import java.util.ArrayList;
 
 public class MascotasXML {
 
+    
+
+
     public static void main(String[] args) throws IOException, SAXException {
 
         try {
@@ -47,14 +50,14 @@ public class MascotasXML {
 
                 NodeList datosMascota = mascota.getChildNodes();
 
-                //Recuperar un dato concreto de un atributo de mascota
+
+
+
+                //Recuperar el dato nombre
                 Element elemento = (Element) mascota;
                 Node nodoNombre = elemento.getAttributeNode("Nombre");
                 String valNombre = nodoNombre.getTextContent();
                 System.out.println("Nombre = " + valNombre);
-
-
-
 
                 //Recuperar el dato tipo
                 Node nodoTipo = elemento.getElementsByTagName("tipo").item(0);
@@ -68,20 +71,22 @@ public class MascotasXML {
 
                 //Recuperar el dato genero
                 Node nodoGenero = elemento.getElementsByTagName("genero").item(0);
-                String valGenero = "";
+                String valGenero = nodoGenero.getTextContent();
 
-
-
+                //Le indicamos que si no aparece género, saque un mensaje por consola
                 if (nodoGenero == null){
-                    valGenero = ("indefinido");
 
                     System.out.println("No tiene género");
-
+                //De lo contrario, muestra el género
                 }else {
-                     valGenero = nodoGenero.getTextContent();
+                    valGenero = nodoGenero.getTextContent();
                     System.out.println("Genero = " + valGenero);
 
                 }
+
+
+
+
 
                 //Se crea un nuevo objeto de tipo Mascota
                 Mascota objeto = new Mascota(valNombre, valTipo, valEdad, valGenero);
@@ -89,14 +94,22 @@ public class MascotasXML {
                 arrayMascotas.add(objeto);
 
             }
-                    for(Mascota objeto : arrayMascotas){
-                        System.out.println(objeto.toString());
-                    }
+            for(Mascota objeto : arrayMascotas){
 
+                //Buscamos a Churchill y le modificamos el género
+                if (objeto.getNombre().equals("Churchill")){
+                    objeto.setGenero("Macho");
+                }
+                System.out.println(objeto.toString());
+            }
 
+            //Se crea la mascota Leo y se añade a la lista
 
+            Mascota mascota = new Mascota();
+            mascota.setNombre("Leo");
+            mascota.setTipo("Gato");
 
-
+            arrayMascotas.add(mascota);
 
 
         } catch (ParserConfigurationException e) {
