@@ -71,7 +71,7 @@ public class MascotasXML {
 
                 //Recuperar el dato genero
                 Node nodoGenero = elemento.getElementsByTagName("genero").item(0);
-                String valGenero = nodoGenero.getTextContent();
+                String valGenero = "";
 
                 //Le indicamos que si no aparece género, saque un mensaje por consola
                 if (nodoGenero == null){
@@ -100,7 +100,7 @@ public class MascotasXML {
                 if (objeto.getNombre().equals("Churchill")){
                     objeto.setGenero("Macho");
                 }
-                System.out.println(objeto.toString());
+
             }
 
             //Se crea la mascota Leo y se añade a la lista
@@ -109,9 +109,15 @@ public class MascotasXML {
             mascota.setNombre("Leo");
             mascota.setTipo("Gato");
 
+            //Se añade
             arrayMascotas.add(mascota);
 
+            //Recorremos el array e imprimimos
+            for(Mascota objeto : arrayMascotas){
 
+
+            System.out.println(objeto);
+        }
         } catch (ParserConfigurationException e) {
             throw new RuntimeException(e);
         }
