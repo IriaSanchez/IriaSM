@@ -18,3 +18,6 @@ C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEje
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio5.resources
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio6.resources
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio7.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio8.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio9.resources
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WFEjercicios\WFEjercicios\obj\Debug\WFEjercicios.Ejercicio9NUEVO.resources
