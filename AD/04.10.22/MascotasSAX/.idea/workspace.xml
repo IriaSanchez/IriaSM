@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eea16b6-5bc8-4305-a881-d66960fdbf23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03.10.22/MascotasSAX/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Mascota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MascotasSAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParseadorMascotasSAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03.10.22/EjemploAlumnos/target/classes/org/example/Alumno.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../03.10.22/EjemploAlumnos/target/classes/org/example/Alumno.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MascotasSAX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MascotasSAX" />
+      <module name="MascotasSAX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MascotasSAX" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eea16b6-5bc8-4305-a881-d66960fdbf23" name="Changes" comment="" />
+      <created>1664883654127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664883654127</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
