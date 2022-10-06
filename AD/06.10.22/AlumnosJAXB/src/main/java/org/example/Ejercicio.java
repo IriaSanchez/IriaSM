@@ -11,16 +11,23 @@ public class Ejercicio {
 
     public static void main(String[] args ) throws JAXBException {
 
+        //Creamos fichero que apunta a una ruta
         File file = new File("C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\AD\\alumnos.xml");
+
+
         ArrayList<AlumnoJAXB> alumnos = new ArrayList<AlumnoJAXB>();
+
+        //Leemos
 
         if(file.exists()){
 
+            //Trata todo desde la clase Alumnos
+            //Siempre igual, solo se cambia la clase desde la que partes
             JAXBContext jaxbContext = JAXBContext.newInstance(Alumnos.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
             Alumnos listaAlumnos = (Alumnos) jaxbUnmarshaller.unmarshal(file);
-            alumnos = (listaAlumnos !=null ? listaAlumnos.getListaAlumnos() : new ArrayList<AlumnoJAXB>());
+            alumnos = (listaAlumnos != null ? listaAlumnos.getListaAlumnos() : new ArrayList<AlumnoJAXB>());
 
         }else {
             System.out.println("No se ha podido encontrar el fichero indicado");

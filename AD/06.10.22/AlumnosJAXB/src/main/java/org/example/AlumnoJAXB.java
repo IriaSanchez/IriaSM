@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 public class AlumnoJAXB {
 
+    //creamos los elementos que tenemos en nuestro xml (elementos o atributos)
     private int id;
     private String nombre;
     private int edad;
@@ -22,13 +23,21 @@ public class AlumnoJAXB {
         return id;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+
+    public int getEdad() {
+        return edad;
+    }
+
+
+    //Los setters con el @XMLElement sin el = porque se llama igual
+
     @XmlElement
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
     }
 
     @XmlElement
@@ -36,14 +45,14 @@ public class AlumnoJAXB {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
 
     @XmlElement
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+
+
 
     @Override
     public String toString() {
