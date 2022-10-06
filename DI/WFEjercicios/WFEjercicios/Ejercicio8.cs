@@ -13,7 +13,6 @@ namespace WFEjercicios
     public partial class Ejercicio8 : Form
     {
 
-
         TextBox tbEjercicio8 = new TextBox();
 
 

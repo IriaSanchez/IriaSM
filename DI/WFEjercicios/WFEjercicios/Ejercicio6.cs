@@ -39,7 +39,6 @@ namespace WFEjercicios
 
 
 
-
         //En el timer que si el valor del texto que hay en la label del progressbar es mayor que 0, avance (en este caso retrocede porque 
         //el step está en -1) modificamos de texto a string
         //de lo contrario, se para, porque el funcionamiento está a falso

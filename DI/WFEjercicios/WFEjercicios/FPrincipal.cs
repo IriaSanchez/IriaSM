@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,6 +30,21 @@ namespace WFEjercicios
            this.panel3.BackColor = Color.DarkViolet;
            this.panel4.BackColor = Color.Indigo;
            this.btSalir.Text = "Salir";
+
+             //CultureInfo cultura = new CultureInfo("en-US");
+             //Thread.CurrentThread.CurrentCulture = cultura;
+             //MessageBox.Show("Cultura actual " + CultureInfo.CurrentCulture.Name
+             //+"\nFecha = "+ DateTime.Now.ToString()
+             //+"\nFecha formateada = " + DateTime.Now.ToString("yyy-MM-dd"));
+
+
+
+            //CultureInfo cultura = new CultureInfo("es-ES");
+            //cultura.NumberFormat.CurrencySymbol = "$";
+            //Thread.CurrentThread.CurrentCulture = cultura;
+            //MessageBox.Show("Cultura actual = " + CultureInfo.CurrentCulture.Name
+            //+ "\nPrecio = " + (4500.20).ToString("C"));
+
 
         }
 
@@ -55,9 +72,7 @@ namespace WFEjercicios
 
         }
 
-
        
-
         private void Boton1_Click(object sender, EventArgs e)
         {
             Ejercicio_1 ejercicio_1 = new Ejercicio_1();
@@ -118,7 +133,12 @@ namespace WFEjercicios
 
         }
 
-      
+        private void btEjercicio10_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+
 
 
 
@@ -171,6 +191,13 @@ namespace WFEjercicios
         private void bt9nuevo_Validating(object sender, CancelEventArgs e)
         {
 
+
+        }
+
+        private void btEjercicio10_Click_1(object sender, EventArgs e)
+        {
+            Ejercicio10 ejercicio10 = new Ejercicio10();
+            ejercicio10.ShowDialog();
 
         }
     }

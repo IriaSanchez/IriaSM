@@ -24,7 +24,6 @@ namespace WFEjercicios
 
 
 
-
         private void Ejercicio7_Load(object sender, EventArgs e)
         {
             //Añadimos datos A MANO al objeto llamado listado

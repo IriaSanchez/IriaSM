@@ -23,7 +23,6 @@ namespace WFEjercicios
 
         }
 
-
         private void btValidar_Click(object sender, EventArgs e)
         {
 

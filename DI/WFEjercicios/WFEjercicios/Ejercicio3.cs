@@ -69,7 +69,6 @@ namespace WFEjercicios
 
 
 
-
         private void elegirCoche()
         {
             if (rbFiat.Checked){

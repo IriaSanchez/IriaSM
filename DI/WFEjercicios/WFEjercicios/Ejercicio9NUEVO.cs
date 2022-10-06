@@ -43,7 +43,6 @@ namespace WFEjercicios
         }
 
 
-
         //Validating (cuando sales de cada textbox)
         private void tbTelefono_Validating(object sender, CancelEventArgs e)
         {
