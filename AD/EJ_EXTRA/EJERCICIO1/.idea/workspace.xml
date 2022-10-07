@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e25266ad-5e0b-4083-b4d4-e783b9983408" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/src/main/java/org/example/Mascota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/src/main/java/org/example/MascotasXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01.10.22/MascotasXML/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/src/main/java/org/example/binarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO2_binarios/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/src/main/java/org/example/binarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO3_caracteres/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/src/main/java/org/example/codificados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO4_codificados/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/src/main/java/org/example/aleatorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/src/main/java/org/example/deportista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EJERCICIO5_aleatorio/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../27.09.22/ejercicio_1_xml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../27.09.22/ejercicio_1_xml/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Acceso_Secuencial_Binario/Prueba.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Acceso_Secuencial_Binario/Prueba_copia.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/src/main/java/org/example/EchoBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BotTelegram/BotTelegram/target/classes/org/example/EchoBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ejercicio6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Directorios/fichero4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Directorios/primer_directorio/fichero1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Directorios/primer_directorio/fichero2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Directorios/segundo_directorio/fichero3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/saveactions_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/src/main/java/org/example/Ejercicio7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ficheros/Ficheros_/target/classes/org/example/Ejercicio7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PruebaISO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PruebaUTF.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Fnm4TyPi18ZiTDjq0Bsf3ITec8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/OneDrive/Documentos/GitHub/IriaSM/AD/EJ_EXTRA/EJERCICIO1&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="ficheros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ficheros" />
+      <module name="EJ_REPASO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Ejercicios_Repaso" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Ejercicios_Repaso" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ficheros" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e25266ad-5e0b-4083-b4d4-e783b9983408" name="Changes" comment="" />
+      <created>1665136033940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665136033940</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
