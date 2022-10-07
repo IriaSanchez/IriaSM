@@ -26,8 +26,6 @@ namespace WFEjercicios
             elegirGenero();
         }
 
-
-
         private void lbMusica_SelectedIndexChanged(object sender, EventArgs e)
         {
             reproducirCancion();

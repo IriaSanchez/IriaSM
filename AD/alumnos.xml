@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<listaAlumnos>
+	<alumno>
+		<nombre>Luis</nombre>
+		<edad>15</edad>
+	</alumno>
+	<alumno>
+		<nombre>Maria</nombre>
+		<edad>14</edad>
+	</alumno>
+	<alumno nombre = "Pepe">
+		<edad>14</edad>
+	</alumno>
+</listaAlumnos>

@@ -37,7 +37,6 @@ namespace WFEjercicios
 
 
 
-
         //boton para iniciar o pausar la cuenta atrás
         private void btIniciarPausar_Click(object sender, EventArgs e){
 
