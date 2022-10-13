@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+	<aventura titulo = "THE LOST CITY - VERSION LA CORUÑA">
+	
+		<escena codigo = "1">
+		<texto>Me despierto desorientada. Miro a mi alrededor y veo que estoy en los aledaños de la Torre de Hércules. Puedo subir a la torre, caminar hacia la Casa de los Peces, o ir a la Domus....</texto>
+				<opcion resultado = "6" texto = "Subo a la torre" OpcionUsuario = "1" />
+				<opcion resultado = "2" texto = "Camino hacia la Casa de los Peces" OpcionUsuario = "2" />
+				<opcion resultado = "4" texto = "Voy a la Domus" OpcionUsuario = "3" />
+		</escena>
+		
+		<escena codigo = "2">
+		<texto>Una vez dentro tengo varias opciones, dirigirme a la Sala Nautilus, visitar las focas en el exterior o buscar el póster de 20.000 leguas de viaje submarino...</texto>
+				<opcion resultado = "7" texto = "Voy a la Sala Nautilus" OpcionUsuario = "1" />
+				<opcion resultado = "3" texto = "Visito a las focas" OpcionUsuario = "2" />
+				<opcion resultado = "5" texto = "Busco el póster" OpcionUsuario = "3" />
+		</escena>
+		
+		<escena codigo = "3">
+		<texto> Una intuición te dice que la foca Paquito, estrella del Aquarium, tiene respuestas...ves que de los bigotes le cuelga un post-it...puedes lanzarte a quitárselo, pedírselo educadamente o salir de allí y dirigirte a la Domus</texto>
+				<opcion resultado = "8" texto = "Lanzarme a por el post-it" OpcionUsuario = "1" />
+				<opcion resultado = "9" texto = "Pedírselo educadamente" OpcionUsuario = "2" />
+				<opcion resultado = "4" texto = "Ir a la Domus" OpcionUsuario = "3" />
+		</escena>
+		
+		<escena codigo = "4">
+		<texto>En la Domus puedo visitar el nuevo vídeo del parto, comprobar mi fuerza tirando el balón contra la portería o arriesgarme con los olores...</texto>
+				<opcion resultado = "10" texto = "Veo el parto" OpcionUsuario = "1" />
+				<opcion resultado = "11" texto = "Juego con el balón" OpcionUsuario = "2" />
+				<opcion resultado = "5" texto = "Me arriesgo con los olores" OpcionUsuario = "3" />
+		</escena>
+		
+		<escena codigo = "5">
+		<texto>Encuentro una nota escondida que dice "Corta el rojo"... puedo confiar o no...está en mis manos</texto>
+				<opcion resultado = "12" texto = "Llamo a los artificieros y les digo que corten el rojo" OpcionUsuario = "1" />
+				<opcion resultado = "13" texto = "Llamo a los artificieros y les digo que corten el azul" OpcionUsuario = "2" />
+		</escena>
+		
+		
+		<escena codigo="6">
+        <texto> Tras 234 escaleras pierdes el conocimiento y la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta! </texto>
+        </escena>
+		
+		<escena codigo="7">
+        <texto> Te relajas demasiado observando los peces y te quedas dormido y la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta!  </texto>
+        </escena>
+	
+	    <escena codigo="8">
+        <texto> La foca Paquito está harta de vivir encerrada, tiene muy mala leche y se enzarza contigo, te ahogas y la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta!  </texto>
+        </escena>
+		
+		<escena codigo="9">
+        <texto>Aunque tengo grandes dotes para hablar el idioma de las focas, el post-it se cae de los bigotes de Paquito y borra el mensaje....la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta! </texto>
+        </escena>
+		
+		<escena codigo="10">
+        <texto>Menudo mareo...me desmayo la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta! </texto>
+        </escena>
+		
+		<escena codigo="11">
+        <texto>Me reto conmigo misma y acaba perdiendo un tiempo muy valiso....la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta! </texto>
+        </escena>
+		
+		<escena codigo="12">
+        <texto>Demasiado confiada....la bomba nuclear explota...¡La Coruña ha sido exterminada del planeta! </texto>
+        </escena>
+		
+		<escena codigo="13">
+        <texto>¡Gran intución! ¡Has salvado a la ciudad de La Coruña! </texto>
+        </escena>
+		
+		
+	</aventura>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//boolean finalpartida = false; //al inicio partida
+//int escena =1;
+
+//while(!finalpartida){
+ // imprimirEscena(escena);
+ // teclear opcion con el scanner
+ // procesarOpcion(); cambia la escena
+//}
+
+
