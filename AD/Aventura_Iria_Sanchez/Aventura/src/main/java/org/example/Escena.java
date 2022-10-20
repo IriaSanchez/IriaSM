@@ -6,12 +6,12 @@ public class Escena {
 
     private int codigo;
     private String texto;
-    ArrayList<Opciones> opciones = new ArrayList<Opciones>();
+    ArrayList<Opcion> opciones = new ArrayList<Opcion>();
 
     public Escena() {
     }
 
-    public Escena(int codigo, String texto, ArrayList<Opciones> opciones) {
+    public Escena(int codigo, String texto, ArrayList<Opcion> opciones) {
         this.codigo = codigo;
         this.texto = texto;
         this.opciones = opciones;
@@ -33,11 +33,11 @@ public class Escena {
         this.texto = texto;
     }
 
-    public ArrayList<Opciones> getOpciones() {
+    public ArrayList<Opcion> getOpciones() {
         return opciones;
     }
 
-    public void setOpciones(ArrayList<Opciones> opciones) {
+    public void setOpciones(ArrayList<Opcion> opciones) {
         this.opciones = opciones;
     }
 

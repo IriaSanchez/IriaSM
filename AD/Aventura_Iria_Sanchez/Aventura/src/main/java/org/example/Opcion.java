@@ -1,15 +1,15 @@
 package org.example;
 
-public class Opciones {
+public class Opcion {
 
     private int OpcionUsuario;
     private String texto;
     private int resultado;
 
-    public Opciones() {
+    public Opcion() {
     }
 
-    public Opciones(int opcionUsuario, String texto, int resultado) {
+    public Opcion(int opcionUsuario, String texto, int resultado) {
         OpcionUsuario = opcionUsuario;
         this.texto = texto;
         this.resultado = resultado;
