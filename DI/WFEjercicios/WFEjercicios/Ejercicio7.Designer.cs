@@ -178,6 +178,7 @@
             this.lbNombre.Size = new System.Drawing.Size(44, 13);
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre";
+            this.lbNombre.Click += new System.EventHandler(this.lbNombre_Click);
             // 
             // panel2
             // 
