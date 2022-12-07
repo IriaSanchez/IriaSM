@@ -34,33 +34,30 @@ public class aleatorio {
             //Tamaño del fichero
             long tamano = fDeportistas.length();
             //Posicionar el puntero del fichero en la posición indicada
-            fDeportistas.seek(posicion);
+            fDeportistas.seek(140);
 
 
-            //Mientras que sea menor que el tamaño del fichero
-            while (fDeportistas.getFilePointer() < tamano) {
 
-                //El puntero está inicializado en la posición 2
-                if (fDeportistas.getFilePointer() == posicion) {
+                String nombre = "";
 
-                //Recojo datos de la clase deportista
-                fDeportistas.writeChars(deportista.getNombre());
-                fDeportistas.writeInt(deportista.getEdad());
-                fDeportistas.writeDouble(deportista.getSalario());
-                fDeportistas.writeDouble(deportista.getPublicidad());
+                for(int i = 0; i < 25; i++){
+                    nombre+=fDeportistas.readChar();
+
+                }
 
 
-                String nombre = String.valueOf(fDeportistas.readChar());
+
+
                 int edad = fDeportistas.readInt();
                 double salario = fDeportistas.readDouble();
                 double publicidad = fDeportistas.readDouble();
 
                 resultado = nombre + "-" + edad + "-" + salario + "-" + publicidad;
 
-            }
+
             System.out.println(resultado);
 
-            }
+
 
         } catch (IOException e) {
             System.out.println("Fichero no encontrado");

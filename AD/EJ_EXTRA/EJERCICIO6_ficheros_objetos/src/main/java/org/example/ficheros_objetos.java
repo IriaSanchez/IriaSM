@@ -18,24 +18,16 @@ public class ficheros_objetos {
 //        Ciudad{nombre='Toluca', pais='Mexico', region='Centroamérica', elevacion=2648}
 
 
-        ArrayList <Ciudad> ciudades = new ArrayList<Ciudad>();
-
-        ciudades.add(new Ciudad ("La Paz", "Bolivia", "Sudamerica", 3869));
-        ciudades.add(new Ciudad ("Quito", "Ecuador", "Sudamerica", 2784));
-        ciudades.add(new Ciudad ("Toluca", "Mexico", "Centroamérica", 2648));
 
 
         //Objeto fichero
-        File fichero = new File("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO5_ficheros_objetos\\ciudades_1.dat");
+        File fichero = new File("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO6_ficheros_objetos\\ciudades_1.dat");
 
-        //Para poder escribir:
-        FileOutputStream ficheroEscritura = null;
         //Para poder leer
         FileInputStream ficheroLectura = null;
 
 
         //Para acceder a los objetos
-        ObjectOutputStream ficheroObjetoEscritura = null;
         ObjectInputStream ficheroObjetoLectura = null;
 
 
@@ -48,17 +40,9 @@ public class ficheros_objetos {
 
         try {
 
-            //Escribimos en el fichero
-            ficheroEscritura = new FileOutputStream(fichero);
-            ficheroObjetoEscritura = new ObjectOutputStream(ficheroEscritura);
-
-            for (Ciudad Ciudad: ciudades) {
-                ficheroObjetoEscritura.writeObject(ciudades);
-            }
 
             //Leemos en el fichero
             ficheroLectura = new FileInputStream(fichero);
-            ficheroObjetoEscritura = new ObjectOutputStream(ficheroEscritura);
 
             while (continuar){
 
@@ -82,8 +66,6 @@ public class ficheros_objetos {
         }finally {
 
             try {
-                if (ficheroEscritura != null) ficheroEscritura.close();
-                if (ficheroObjetoEscritura != null) ficheroObjetoEscritura.close();
                 if (ficheroLectura != null) ficheroLectura.close();
                 if (ficheroObjetoLectura != null) ficheroObjetoLectura.close();
 
