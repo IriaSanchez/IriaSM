@@ -139,8 +139,9 @@ namespace WFEjercicios
             
         }
 
+        private void lbNombre_Click(object sender, EventArgs e)
+        {
 
-
-     
+        }
     }
 }

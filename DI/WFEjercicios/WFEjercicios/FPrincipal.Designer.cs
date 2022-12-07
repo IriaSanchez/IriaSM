@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btEjercicio10 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bt9nuevo = new System.Windows.Forms.Button();
             this.btEjercicio8 = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.btSalir = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btEjercicio10 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,9 +54,10 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1022, 41);
+            this.panel1.Size = new System.Drawing.Size(919, 41);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -66,8 +67,21 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 536);
+            this.panel2.Size = new System.Drawing.Size(200, 505);
             this.panel2.TabIndex = 1;
+            // 
+            // btEjercicio10
+            // 
+            this.btEjercicio10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEjercicio10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEjercicio10.ForeColor = System.Drawing.Color.Brown;
+            this.btEjercicio10.Location = new System.Drawing.Point(3, 462);
+            this.btEjercicio10.Name = "btEjercicio10";
+            this.btEjercicio10.Size = new System.Drawing.Size(139, 39);
+            this.btEjercicio10.TabIndex = 10;
+            this.btEjercicio10.Text = "Ejercicio 10";
+            this.btEjercicio10.UseVisualStyleBackColor = true;
+            this.btEjercicio10.Click += new System.EventHandler(this.btEjercicio10_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -235,15 +249,15 @@
             // 
             this.panel3.Controls.Add(this.btSalir);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(200, 477);
+            this.panel3.Location = new System.Drawing.Point(200, 446);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(822, 100);
+            this.panel3.Size = new System.Drawing.Size(719, 100);
             this.panel3.TabIndex = 2;
             // 
             // btSalir
             // 
             this.btSalir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btSalir.Location = new System.Drawing.Point(722, 0);
+            this.btSalir.Location = new System.Drawing.Point(619, 0);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(100, 100);
             this.btSalir.TabIndex = 0;
@@ -256,7 +270,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(200, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(822, 436);
+            this.panel4.Size = new System.Drawing.Size(719, 405);
             this.panel4.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -266,25 +280,12 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 38);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
-            // btEjercicio10
-            // 
-            this.btEjercicio10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btEjercicio10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEjercicio10.ForeColor = System.Drawing.Color.Brown;
-            this.btEjercicio10.Location = new System.Drawing.Point(3, 462);
-            this.btEjercicio10.Name = "btEjercicio10";
-            this.btEjercicio10.Size = new System.Drawing.Size(139, 39);
-            this.btEjercicio10.TabIndex = 10;
-            this.btEjercicio10.Text = "Ejercicio 10";
-            this.btEjercicio10.UseVisualStyleBackColor = true;
-            this.btEjercicio10.Click += new System.EventHandler(this.btEjercicio10_Click_1);
-            // 
             // FPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(1022, 577);
+            this.ClientSize = new System.Drawing.Size(919, 546);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
