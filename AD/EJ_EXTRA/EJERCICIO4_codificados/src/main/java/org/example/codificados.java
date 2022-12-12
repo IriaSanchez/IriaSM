@@ -13,7 +13,6 @@ public class codificados {
 //        EJERCICIO RESUELTO CORRECTAMENTE
 
 
-
         try {
 
             //Creamos el BufferedReader y le damos la ruta al InputStreamReader
@@ -35,47 +34,3 @@ public class codificados {
         }
     }
 }
-
-
-
-
-
-
-
-
-//
-//        FileInputStream Cp420 = null;
-//        InputStreamReader lectura = null;
-//
-//        try {
-//
-//            //Fichero de entrada y ruta
-//            Cp420 = new FileInputStream("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO4_codificados\\Cp420.txt");
-//            //Lectura del fichero de entrada creado anteriormente y codificacion
-//            lectura = new InputStreamReader(Cp420, "Cp420");
-//
-//
-//            //Lectura avanzada: leemos el fichero de entrada
-//            int x = 0;
-//            x = lectura.read();
-//
-//
-//            while (x != -1) {
-//
-//                //Escribimos salida por consola
-//                System.out.println(x);
-//                //Volvemos a leer en el fichero de entrada ( hasta que sea distinto a -1)
-//                x = lectura.read();
-//
-//            }
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//
-//        }finally {
-//            lectura.close();
-//            Cp420.close();
-//        }
-//
-//    }
-
