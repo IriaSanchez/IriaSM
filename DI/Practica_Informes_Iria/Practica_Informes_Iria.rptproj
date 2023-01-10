@@ -56,6 +56,7 @@
     <Report Include="InfListCategories.rdl" />
     <Report Include="InfListEmployees.rdl" />
     <Report Include="InfListStock.rdl" />
+    <Report Include="Report1.rdl" />
     <Report Include="Tablero_de_produccion.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />

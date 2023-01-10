@@ -30,7 +30,8 @@ namespace WFEjercicios
 
         }
 
-        //Se iguala el valor del progressbar al texto de su label y el valor del trackbar al del progresbar
+        //Se iguala el valor del progressbar al texto de su label y
+        //el valor del trackbar al del progresbar
         private void progressBar_Click(object sender, EventArgs e)
         {
             this.lbProgressBar.Text = progressBar.Value.ToString();
@@ -39,7 +40,8 @@ namespace WFEjercicios
 
 
 
-        //En el timer que si el valor del texto que hay en la label del progressbar es mayor que 0, avance (en este caso retrocede porque 
+        //En el timer que si el valor del texto que hay en la label del
+        //progressbar es mayor que 0, avance (en este caso retrocede porque 
         //el step está en -1) modificamos de texto a string
         //de lo contrario, se para, porque el funcionamiento está a falso
         private void timer1_Tick(object sender, EventArgs e)

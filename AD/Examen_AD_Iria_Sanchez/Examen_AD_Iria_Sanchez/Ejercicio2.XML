@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<volcanes>
+	<volcan Nombre="Volcán Incahuasi" Clasificacion="Estratovolcán">
+		<altura>6638</altura>
+	</volcan>
+	
+	<volcan Nombre="Monte Pissis" Clasificacion="Estratovolcán">
+		<altura>6795</altura>
+	</volcan>
+	
+	<volcan Nombre="Cerro Bonete Chico" Clasificacion="Estratovolcán">
+		<altura>6759</altura>
+	</volcan>
+</volcanes>

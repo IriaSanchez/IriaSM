@@ -24,8 +24,10 @@ namespace WFEjercicios
         }
         private void btIdioma_Click(object sender, EventArgs e)
         {
-            // Al pulsar la opción 0 (español), muestra el mensaje del recurso en español, por defecto
-            //else, al pulsar la opción 1(ingles) le pedimos que cambie el idioma y muestre el saludo en ingles
+            // Al pulsar la opción 0 (español), muestra el mensaje del recurso
+            // en español, por defecto
+            //else, al pulsar la opción 1(ingles) le pedimos que cambie
+            //el idioma y muestre el saludo en ingles
 
             if (cbIdiomas.SelectedIndex == 0)
             {
