@@ -19,21 +19,32 @@ public class EJ7_XML {
             DocumentBuilder creadorDocumento = fabricaCreadorDocumento.newDocumentBuilder();
             Document documento = (Document) creadorDocumento.parse("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO7_XML\\Peliculas.xml");
 
-           Element raiz = documento.getDocumentElement();
-           NodeList listaPeliculas = raiz.getElementsByTagName("pelicula");
+            Element raiz = documento.getDocumentElement();
+            NodeList listaPeliculas = raiz.getElementsByTagName("pelicula");
+
+            //Recorremos la lista de peliculas
 
             for ( int i = 0; i<listaPeliculas.getLength(); i++){
 
-                Node titulo = listaPeliculas.item(i);
+                //DEL NODO pelicula SACAMOS categoria
 
-                NodeList datosPeliculas = titulo.getChildNodes();
+                Node pelicula = listaPeliculas.item(i);
 
-                Element elemTitulo = (Element) titulo;
+                if (pelicula.getNodeType() == Node.ELEMENT_NODE){
+                    Element elem2 = (Element) pelicula;
+                    String valNombre2 = elem2.getAttribute("categoria");
+
+
+
+                //DEL NODO datosPeliculas SACAMOS el título
+
+                NodeList datosPeliculas = pelicula.getChildNodes();
+
+                Element elemTitulo = (Element) pelicula;
 
                 //NODO titulo
                 Node nodoTitulo = elemTitulo.getElementsByTagName("titulo").item(0);
                 String valTitulo = nodoTitulo.getTextContent();
-                System.out.println(valTitulo);
 
 
                 //DEL NODO titulo sacamos el atributo idioma
@@ -43,21 +54,10 @@ public class EJ7_XML {
                     Element elem = (Element) nodoTitulo;
                     String valNombre = elem.getAttribute("idioma");
 
-                    System.out.println(valNombre);
+                System.out.println(valTitulo+" - " +valNombre2+" - " +valNombre);
+
                 }
-
-
-                //DEL NODO pelicula SACAMOS categoria
-
-//                if (nodoPelicula.getNodeType() == Node.ELEMENT_NODE){
-//
-//                    Element elem2 = (Element) nodoPelicula;
-//                    String valNombre2 = elem2.getAttribute("categoría");
-//
-//                    System.out.println(valNombre2);
-//                }
-
-
+            }
             }
 
             } catch (ParserConfigurationException e) {

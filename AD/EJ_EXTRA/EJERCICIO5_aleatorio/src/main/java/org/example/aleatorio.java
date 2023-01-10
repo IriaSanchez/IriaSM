@@ -1,11 +1,8 @@
 package org.example;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-import static org.example.deportista.nombre;
+
 
 
 //        Se adjunta un fichero con los deportistas mejor pagados.
@@ -21,53 +18,44 @@ public class aleatorio {
 
     public static void main( String[] args ) throws IOException {
 
-
-        int posicion = 2;
-        String resultado = null;
-
         RandomAccessFile fDeportistas = null;
 
         try {
 
             //Fichero y ruta
-            fDeportistas = new RandomAccessFile("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO5_aleatorio\\deportistas.txt", "rw");
-            //Tamaño del fichero
-            long tamano = fDeportistas.length();
+            fDeportistas = new RandomAccessFile("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO5_aleatorio\\deportistas.txt", "r");
+
             //Posicionar el puntero del fichero en la posición indicada
-            fDeportistas.seek(posicion);
+            fDeportistas.seek(70*2);
 
+            String nombre = "";
 
-            //Mientras que sea menor que el tamaño del fichero
-            while (fDeportistas.getFilePointer() < tamano) {
+                for(int i = 0; i < 25; i++){
+                    nombre += fDeportistas.readChar();
+                }
 
-                //El puntero está inicializado en la posición 2
-                if (fDeportistas.getFilePointer() == posicion) {
-
-                //Recojo datos de la clase deportista
-                fDeportistas.writeChars(deportista.getNombre());
-                fDeportistas.writeInt(deportista.getEdad());
-                fDeportistas.writeDouble(deportista.getSalario());
-                fDeportistas.writeDouble(deportista.getPublicidad());
-
-
-                String nombre = String.valueOf(fDeportistas.readChar());
                 int edad = fDeportistas.readInt();
                 double salario = fDeportistas.readDouble();
                 double publicidad = fDeportistas.readDouble();
 
-                resultado = nombre + "-" + edad + "-" + salario + "-" + publicidad;
+                String resultado = nombre + "-" + edad + "-" + salario + "-" + publicidad;
+                System.out.println(resultado);
 
-            }
-            System.out.println(resultado);
 
-            }
 
-        } catch (IOException e) {
-            System.out.println("Fichero no encontrado");
 
+        } catch (Exception e) {
+            e.printStackTrace();
 
         } finally {
-            fDeportistas.close();
+
+            try {
+
+                if (fDeportistas != null) fDeportistas.close();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }

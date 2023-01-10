@@ -2,6 +2,15 @@ package org.example;
 
 public class deportista {
 
+
+
+//    Nota: Un deportista se compone de los siguientes atributos:
+//
+//    Nombre (String de longitud fija de 25 caracteres), cada caracter ocupa 2 bytes, entonces ocupan 50
+//    Edad (int) ocupa 4 bytes
+//    Salario en millones (double) ocupa 8 bytes
+//    Ingresos por publicidad en millones (double) ocupa 8 bytes
+
     //Atributos
     static String nombre;
     private static int edad;

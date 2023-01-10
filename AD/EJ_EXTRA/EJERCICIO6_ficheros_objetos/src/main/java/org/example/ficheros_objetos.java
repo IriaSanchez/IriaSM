@@ -1,11 +1,6 @@
 package org.example;
-
 import java.io.*;
 import java.util.ArrayList;
-
-public class ficheros_objetos {
-
-    public static void main( String[] args ) {
 
 
 //        Crea un programa que lea el fichero y muestre por consola todos sus datos llamando
@@ -16,62 +11,41 @@ public class ficheros_objetos {
 //        Ciudad{nombre='La Paz', pais='Bolivia', region='Sudamerica', elevacion=3869}
 //        Ciudad{nombre='Quito', pais='Ecuador', region='Sudamerica', elevacion=2784}
 //        Ciudad{nombre='Toluca', pais='Mexico', region='Centroamérica', elevacion=2648}
+public class ficheros_objetos {
+    public static void main( String[] args ) {
 
-
-        ArrayList <Ciudad> ciudades = new ArrayList<Ciudad>();
-
-        ciudades.add(new Ciudad ("La Paz", "Bolivia", "Sudamerica", 3869));
-        ciudades.add(new Ciudad ("Quito", "Ecuador", "Sudamerica", 2784));
-        ciudades.add(new Ciudad ("Toluca", "Mexico", "Centroamérica", 2648));
-
-
-        //Objeto fichero
-        File fichero = new File("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO5_ficheros_objetos\\ciudades_1.dat");
-
-        //Para poder escribir:
-        FileOutputStream ficheroEscritura = null;
-        //Para poder leer
-        FileInputStream ficheroLectura = null;
-
-
-        //Para acceder a los objetos
-        ObjectOutputStream ficheroObjetoEscritura = null;
-        ObjectInputStream ficheroObjetoLectura = null;
-
-
-        // Variable booleana para actualizar el bucle while
-        boolean continuar = true;
 
         // Array nuevo para poder leer en el fichero
-        ArrayList <Ciudad> ciudades_2 = new ArrayList <Ciudad> ();
+        ArrayList <Ciudad> ciudades = new ArrayList <Ciudad> ();
+        //Para poder leer
+        FileInputStream ficheroLectura = null;
+        //Para acceder a los objetos
+        ObjectInputStream ficheroObjetoLectura = null;
 
 
         try {
 
-            //Escribimos en el fichero
-            ficheroEscritura = new FileOutputStream(fichero);
-            ficheroObjetoEscritura = new ObjectOutputStream(ficheroEscritura);
-
-            for (Ciudad Ciudad: ciudades) {
-                ficheroObjetoEscritura.writeObject(ciudades);
-            }
+            //Objeto fichero
+            File fichero = new File("C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\IriaSM\\AD\\EJ_EXTRA\\EJERCICIO6_ficheros_objetos\\ciudades_1.dat");
 
             //Leemos en el fichero
             ficheroLectura = new FileInputStream(fichero);
-            ficheroObjetoEscritura = new ObjectOutputStream(ficheroEscritura);
 
-            while (continuar){
+            //Accedemos
+            ficheroObjetoLectura = new ObjectInputStream(ficheroLectura);
+
+            while (true){
 
                 try {
-                    ciudades_2.add((Ciudad) ficheroObjetoLectura.readObject());
-                }catch (EOFException e){
-                    continuar = false;
+                    ciudades.add((Ciudad) ficheroObjetoLectura.readObject());
+                }catch (IOException e){
+                    break;
                 }
             }
 
-            for (Ciudad Ciudad: ciudades_2) {
+            for (Ciudad ciudad: ciudades) {
 
-                System.out.println(Ciudad.toString());
+                System.out.println(ciudad.toString());
 
             }
 
@@ -82,8 +56,6 @@ public class ficheros_objetos {
         }finally {
 
             try {
-                if (ficheroEscritura != null) ficheroEscritura.close();
-                if (ficheroObjetoEscritura != null) ficheroObjetoEscritura.close();
                 if (ficheroLectura != null) ficheroLectura.close();
                 if (ficheroObjetoLectura != null) ficheroObjetoLectura.close();
 
