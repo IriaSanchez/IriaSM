@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\App.xaml
-31726821595
+8576725454
 
-81762087845
+13-1344292106
 13-1310406943
-DockPanel.xaml;StackPanel.xaml;WrapPanel.xaml;
+FCanvas.xaml;FComponentes1.xaml;FDockPanel.xaml;FGrid.xaml;FPosicion.xaml;FScrollViewer.xaml;FStackPanel.xaml;FWrapPanel.xaml;
 
 True
 

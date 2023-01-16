@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPFPrueba.FComponentes1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPrueba"
+        mc:Ignorable="d"
+        Title="FComponentes1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" FontFamily="Comic Sans MS" FontSize="20" FontStyle="Italic" Foreground="Red" Background="Gray" Content="Esto es una etiqueta"/>
+
+        <!-- Se corta si no cabe al hacer scroll -->
+       
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Esto es un texto largo" FontFamily="Comic Sans MS" Background="ForestGreen" FontStyle="Italic" FontSize="20" Foreground="Blue" />
+        
+        <!-- Si no cabe pone puntos suspensivos al hacer scroll -->
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Esto es un texto mas largo" FontFamily="Comic Sans MS" Background="Beige" FontStyle="Italic" FontSize="20" Foreground="Red" TextTrimming="WordEllipsis"/>
+        
+        <!-- Se apila en vertical si no cabe al hacer scroll -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Esto es un texto muy muy largo" FontFamily="Comic Sans MS" Background="RoyalBlue" FontStyle="Italic" FontSize="20" Foreground="Gold" TextWrapping="Wrap"/>
+
+        <!--Con el Textbox se puede escribir,se indica el maximo que se pueda escribir o cómo,salto de línea o no la alineación o el sentido-->
+        <TextBox Grid.Row="1" Grid.Column="1" AcceptsReturn="True" Text="Introduzca un nombre" FontSize="20" CharacterCasing="Upper" TextAlignment="Right" MaxLength="10" MinLines="2"/>
+
+        <!--Maximo o minimo para contraseñas y con qué caracter ocultarlo-->
+        <PasswordBox Grid.Row="1" Grid.Column="2" FontSize="20" MaxLength="10" PasswordChar="*"/>
+
+        <!--Boton que reacciona al click-->
+        <Button Grid.Row="2" Grid.Column="0" Content="¡Pínchame!" FontSize="20" Width="300" Background="Aqua" Foreground="BlueViolet"/>
+
+    </Grid>
+</Window>
