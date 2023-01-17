@@ -5,15 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFPrueba"
         mc:Ignorable="d"
-        Title="FComponentes1" Height="450" Width="800">
-    <Grid>
+        Title="FComponentes1" Height="480" Width="900">
+    <Grid Margin="0,0,0,-229">
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -29,16 +36,252 @@
         <TextBlock Grid.Row="0" Grid.Column="2" Text="Esto es un texto mas largo" FontFamily="Comic Sans MS" Background="Beige" FontStyle="Italic" FontSize="20" Foreground="Red" TextTrimming="WordEllipsis"/>
         
         <!-- Se apila en vertical si no cabe al hacer scroll -->
-        <TextBlock Grid.Row="1" Grid.Column="0" Text="Esto es un texto muy muy largo" FontFamily="Comic Sans MS" Background="RoyalBlue" FontStyle="Italic" FontSize="20" Foreground="Gold" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="Esto es un texto muy muy largo" FontFamily="Comic Sans MS" Background="RoyalBlue" FontStyle="Italic" FontSize="20" Foreground="Gold" TextWrapping="Wrap"/>
 
         <!--Con el Textbox se puede escribir,se indica el maximo que se pueda escribir o cómo,salto de línea o no la alineación o el sentido-->
-        <TextBox Grid.Row="1" Grid.Column="1" AcceptsReturn="True" Text="Introduzca un nombre" FontSize="20" CharacterCasing="Upper" TextAlignment="Right" MaxLength="10" MinLines="2"/>
+        <TextBox Grid.Row="1" Grid.Column="0" AcceptsReturn="True" Text="Introduzca un nombre" FontSize="20" CharacterCasing="Upper" TextAlignment="Right" MaxLength="10" MinLines="2"/>
 
         <!--Maximo o minimo para contraseñas y con qué caracter ocultarlo-->
-        <PasswordBox Grid.Row="1" Grid.Column="2" FontSize="20" MaxLength="10" PasswordChar="*"/>
+        <PasswordBox Grid.Row="1" Grid.Column="1" FontSize="20" MaxLength="10" PasswordChar="*"/>
 
         <!--Boton que reacciona al click-->
-        <Button Grid.Row="2" Grid.Column="0" Content="¡Pínchame!" FontSize="20" Width="300" Background="Aqua" Foreground="BlueViolet"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="¡Pínchame!" FontSize="20" Width="300" Background="Aqua" Foreground="BlueViolet"/>
+
+        <!--Checkbox. En este caso añadimos ToolTip para ayuda al pasar el ratón; vale para cualquiera-->
+        <StackPanel Background="CornflowerBlue" Grid.Row="1" Grid.Column="3" >
+            <!--Checkbox 1 que está marcado el check-->
+            <CheckBox  Content="Mañana" IsChecked="True" HorizontalContentAlignment="Left" ToolTip="Ayuda" >
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="2" ScaleY="2"></ScaleTransform>
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <!--Checkbox 2 que está la casilla vacía-->
+            <CheckBox Content="Tarde" IsChecked="False">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="2" ScaleY="2"></ScaleTransform>
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <!--Checkbox 3 que está la casilla con relleno-->
+            <CheckBox Content="Noche" IsChecked="{x:Null}">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="2" ScaleY="2"></ScaleTransform>
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+        </StackPanel>
+
+        <!--RadioButton-->
+        <StackPanel Background="DarkSlateGray" Grid.Row="2" Grid.Column="0" Margin="20">
+            <RadioButton GroupName="Color" Content="Azul" IsChecked="True">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"></ScaleTransform>
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton GroupName="Color" Content="Rojo" IsChecked="False">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"></ScaleTransform>
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton GroupName="Color" Content="Negro" IsChecked="False">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"></ScaleTransform>
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            
+            <RadioButton GroupName="Marca" Content="Ferrari" IsChecked="True">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"></ScaleTransform>
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton GroupName="Marca" Content="Twingo" IsChecked="False">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"></ScaleTransform>
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </StackPanel>
+
+
+         <!--ComboBox-->
+        <StackPanel Background="LightCoral" Grid.Row="2" Grid.Column="1">
+          <ComboBox>
+            <ComboBoxItem>Mañana</ComboBoxItem>
+            <ComboBoxItem>Tarde</ComboBoxItem>
+            <ComboBoxItem>Noche</ComboBoxItem>
+          </ComboBox>
+       </StackPanel>
+
+        <!--ListBox-->
+
+        <StackPanel Background="Gold" Grid.Row="2" Grid.Column="2">
+            <ListBox SelectionMode="Single">
+                <ListBoxItem IsSelected="True">Azul</ListBoxItem>
+                <ListBoxItem>Rojo</ListBoxItem>
+                <ListBoxItem>Verde</ListBoxItem>
+            </ListBox>
+        </StackPanel>
+
+        <!--Slider-->
+        <StackPanel Background="LightGoldenrodYellow" Grid.Row="2" Grid.Column="3">
+            <Slider Width="200" Value="5" Minimum="1" Maximum="10"
+                    SmallChange="1" LargeChange="2" TickPlacement="BottomRight"
+                    TickFrequency="1" IsSnapToTickEnabled="True"/>
+        </StackPanel>
+
+        <!--Calendario-->
+        <StackPanel Grid.Row="3" Grid.Column="0">
+            <Calendar IsTodayHighlighted="True"
+                      DisplayMode="Month"
+                      FirstDayOfWeek="Monday"
+                      DisplayDateStart="1/1/2023" DisplayDateEnd="1/31/2023">
+                
+                <Calendar.BlackoutDates>
+                    <CalendarDateRange Start="1/12/2023" End="1/12/2023"></CalendarDateRange>
+                </Calendar.BlackoutDates>
+                
+            </Calendar>
+        </StackPanel>
+        
+        <!--DataPicker-->
+        <Grid Grid.Row="3" Grid.Column="1">
+            <DatePicker Width="200" Height="25" SelectedDate="10/04/2021" SelectedDateFormat="Long">
+                <DatePicker.BlackoutDates>
+                    <CalendarDateRange Start="10/01/2021" End="10/02/2021"/>
+                </DatePicker.BlackoutDates>
+            </DatePicker>
+        </Grid>
+
+        <!--ProgressBar-->
+        <Grid Background="MediumAquamarine" Grid.Row="3" Grid.Column="2">
+            <ProgressBar  Width="100" Height="20" Minimum="0" Maximum="10" Value="5" />
+        </Grid>
+        
+        <!--ToolTip-->
+        <StackPanel  Grid.Row="3" Grid.Column="3">
+            <Button Content="Botón con Tooltip" HorizontalAlignment="Left">
+                <Button.ToolTip>
+                    <TextBlock Text="Ejemplo de ayuda" FontSize="20" Foreground="DarkCyan" Background="DarkGoldenrod"/>
+                </Button.ToolTip>
+            </Button>
+        </StackPanel>
+        
+        
+        <!--StatusBar-->
+        <Grid Grid.Row="0" Grid.Column="4">
+            <StatusBar VerticalAlignment="Bottom" Background="DarkSeaGreen">
+
+                <StatusBarItem Margin="10" HorizontalAlignment="Left">
+                    <TextBlock>Versión 1.1</TextBlock>
+                </StatusBarItem>
+
+                <Separator/>
+
+                <StatusBarItem Margin="10" HorizontalAlignment="Left">
+                    <TextBlock>Ayuda de la aplicación</TextBlock>
+                </StatusBarItem>
+
+            </StatusBar>
+        </Grid>
+        
+        <!--Image-->
+        <StackPanel Grid.Row="1" Grid.Column="4">
+            <Image Height="200" Width="200" Stretch="Fill" Source="C:\Users\FP\Desktop\descarga.jpg"/>
+        </StackPanel>
+          
+
+        <StackPanel Grid.Row="2" Grid.Column="4">
+            <Image Height="200" Width="200" Stretch="Fill" Source="https://img.freepik.com/fotos-premium/perro-cachorro-feliz-sonriendo-sobre-fondo-purpura-aislado_77749-593.jpg?w=2000"/>
+        </StackPanel>
+        
+        
+        <!--ContextMenu-->
+        <StackPanel Grid.Row="3" Grid.Column="4">
+            <Button Content="Botón" Width="100">
+                <Button.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Copiar">
+                            <MenuItem.Icon>
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/263/263100.png"></Image>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Pegar">
+                            <MenuItem.Icon>
+                                <Image Source="https://r.search.yahoo.com/_ylt=AwrEmO6vicZjLeU4OuWV.Qt.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzU4YjAyMzU4MzA3ZDE0ODJhMzRkYmI4YjYzYTkwOWE3BGdwb3MDMTA4BGl0A2Jpbmc-/RV=2/RE=1673984559/RO=11/RU=http%3a%2f%2fimagenpng.com%2ficonos-png%2f/RK=2/RS=XfW0h0QbpP2VmH4aO5O4lr9h5Lg-"/>
+                            </MenuItem.Icon>
+
+                        </MenuItem>
+                    </ContextMenu>
+                </Button.ContextMenu>
+            </Button>
+        </StackPanel>
+
+        <!--ToolBar-->
+        <Grid Background="Wheat" Grid.Row="0" Grid.Column="5">
+            <ToolBarTray Background="White" Width="500">
+                <ToolBar Band="1">
+                    <Button>
+                        <Image Height="20" Width="20" Stretch="Fill" Source="C:\Users\FP\Desktop\suma.png"/>
+                    </Button>
+                    <Separator/>
+                    <Button>
+                        <Image Height="20" Width="20" Stretch="Fill" Source="C:\Users\FP\Desktop\menu.png"/>
+                    </Button>
+                </ToolBar>
+                <ToolBar Band="1">
+                    <Button Content="Nuevo"/>
+                    <Button Content="Abrir"/>
+                    <Button Content="Guardar"/>
+                    <Separator/>
+                    <Button Content="Salir"/>
+                </ToolBar>
+            </ToolBarTray>
+        </Grid>
+        
+        <!--TabControtl-->
+        
+        <StackPanel Grid.Row="1" Grid.Column="5">
+            <TabControl Margin="20">
+                <TabItem Header="Colores">
+                     <StackPanel>
+                        <TextBlock Text="Azul"/>
+                        <TextBlock Text="Rojo"/>
+                        <TextBlock Text="Gris"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Frutas">
+                    <StackPanel>
+                        <TextBlock Text="Manzana"/>
+                        <TextBlock Text="Pera"/>
+                        <TextBlock Text="Plátano"/>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+        
+        
+        <!--Frame-->
+
+        <Frame Grid.Row="2" Grid.Column="5" Source="Page1.xaml"/>
+
+
+
+
+
+
+
+
+
+
+        <StackPanel Grid.Row="3" Grid.Column="5"></StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="5"></StackPanel>
+
+
+
+
+
+
+
+
+
+
 
     </Grid>
 </Window>
