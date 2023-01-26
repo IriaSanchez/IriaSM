@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:WPFPrueba"
              StartupUri="FComponentes1.xaml">
     <Application.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Yellow" />
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="FontSize" Value="80"/>
+            <Setter Property="FontFamily" Value= "/Fonts/#Liquid Crystal"/>
+        </Style>
          
     </Application.Resources>
 </Application>

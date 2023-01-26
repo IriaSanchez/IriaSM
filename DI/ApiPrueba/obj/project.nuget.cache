@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gh7Kn8aqEVcD0k+AgUHHi/NXGLg//4cNb/dKd1IpQNnSiuiWXGhBSBNKGu8hlmK+xaGbcVkADJu6u7+pIDUjlw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FP\\Documents\\GitHub\\IriaSM\\DI\\ApiPrueba\\ApiPrueba.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FP\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

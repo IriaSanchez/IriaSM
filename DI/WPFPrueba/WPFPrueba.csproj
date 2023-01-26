@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Binding.xaml.cs">
+      <DependentUpon>Binding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Estilos.xaml.cs">
+      <DependentUpon>Estilos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EstilosAplicacion.xaml.cs">
+      <DependentUpon>EstilosAplicacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FCanvas.xaml.cs">
       <DependentUpon>FCanvas.xaml</DependentUpon>
     </Compile>
@@ -76,6 +85,18 @@
     <Compile Include="FWrapPanel.xaml.cs">
       <DependentUpon>FWrapPanel.xaml</DependentUpon>
     </Compile>
+    <Page Include="Binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Estilos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EstilosAplicacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FCanvas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,6 +146,7 @@
     <Compile Include="Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -142,6 +164,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\liquid.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,5 +173,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

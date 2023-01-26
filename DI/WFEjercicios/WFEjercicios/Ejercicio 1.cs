@@ -30,7 +30,7 @@ namespace WFEjercicios
         private void button1_Click(object sender, EventArgs e)
         {
             this.label2.Text = this.textBox1.Text;
-            this.textBox1.Enabled = false;
+            this.textBox1.Enabled = true;
             this.button1.Visible = false;
             
         }

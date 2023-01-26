@@ -30,3 +30,10 @@ C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\FComponentes1.baml
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\FPosicion.baml
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Page1.g.cs
 C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Page1.baml
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Estilos.g.cs
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Estilos.baml
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\EstilosAplicacion.g.cs
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\App.baml
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\EstilosAplicacion.baml
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Binding.g.cs
+C:\Users\FP\Documents\GitHub\IriaSM\DI\WPFPrueba\obj\Debug\Binding.baml
