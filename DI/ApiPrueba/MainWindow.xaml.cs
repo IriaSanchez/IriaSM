@@ -51,6 +51,32 @@ namespace ApiPrueba
             if(SearchBox.Text.Equals( btHarry.Content))
             {
                 btHarry.Visibility= Visibility.Visible;
+                spHarry.Visibility= Visibility.Visible;
+            }
+            if (SearchBox.Text.Equals(btHermione.Content))
+            {
+                btHermione.Visibility = Visibility.Visible;
+                spHermione.Visibility = Visibility.Visible;
+            }
+            if (SearchBox.Text.Equals(btRon.Content))
+            {
+                btRon.Visibility = Visibility.Visible;
+                spRon.Visibility = Visibility.Visible;
+            }
+            if (SearchBox.Text.Equals(btGinny.Content))
+            {
+                btGinny.Visibility = Visibility.Visible;
+                spGinny.Visibility = Visibility.Visible;
+            }
+            if (SearchBox.Text.Equals(btNeville.Content))
+            {
+                btNeville.Visibility = Visibility.Visible;
+                spNev.Visibility = Visibility.Visible;
+            }
+            if (SearchBox.Text.Equals(btLuna.Content))
+            {
+                btLuna.Visibility = Visibility.Visible;
+                spLuna.Visibility = Visibility.Visible;
             }
 
 
@@ -65,7 +91,7 @@ namespace ApiPrueba
         {
 
 
-            tbApodoHarry.Text = "Apodo: " + listaPersonajes[0].apodo;
+            tbApodoHarry.Text = "Nombre completo: " + listaPersonajes[0].personaje;
             tbCasaHarry.Text = "Casa de Hogwarts: " + listaPersonajes[0].casaDeHogwarts;
             tbActorHarry.Text = "Actor: " + listaPersonajes[0].interpretado_por;
 
@@ -84,7 +110,7 @@ namespace ApiPrueba
         private void btHermioneClick(object sender, RoutedEventArgs e)
         {
 
-            tbApodoHermione.Text = "Apodo: " + listaPersonajes[1].apodo;
+            tbApodoHermione.Text = "Nombre completo: " + listaPersonajes[1].personaje;
             tbCasaHermione.Text = "Casa de Hogwarts: " + listaPersonajes[1].casaDeHogwarts;
             tbActorHermione.Text = "Actriz: " + listaPersonajes[1].interpretado_por;
 
@@ -100,7 +126,7 @@ namespace ApiPrueba
 
         private void btRonClick(object sender, RoutedEventArgs e)
         {
-            tbApodoRon.Text = "Apodo: " + listaPersonajes[2].apodo;
+            tbApodoRon.Text = "Nombre completo: " + listaPersonajes[2].personaje;
             tbCasaRon.Text = "Casa de Hogwarts: " + listaPersonajes[2].casaDeHogwarts;
             tbActorRon.Text = "Actor: " + listaPersonajes[2].interpretado_por;
 
@@ -115,7 +141,7 @@ namespace ApiPrueba
 
         private void btGinnyClick(object sender, RoutedEventArgs e)
         {
-            tbApodoGinny.Text = "Apodo: " + listaPersonajes[8].apodo;
+            tbApodoGinny.Text = "Nombre completo: " + listaPersonajes[8].personaje;
             tbCasaGinny.Text = "Casa de Hogwarts: " + listaPersonajes[8].casaDeHogwarts;
             tbActorGinny.Text = "Actriz: " + listaPersonajes[8].interpretado_por;
 
@@ -130,7 +156,7 @@ namespace ApiPrueba
 
         private void btNevilleClick(object sender, RoutedEventArgs e)
         {
-            tbApodoNev.Text = "Apodo: " + listaPersonajes[11].apodo;
+            tbApodoNev.Text = "Nombre completo: " + listaPersonajes[11].personaje;
             tbCasaNev.Text = "Casa de Hogwarts: " + listaPersonajes[11].casaDeHogwarts;
             tbActorNev.Text = "Actor: " + listaPersonajes[11].interpretado_por;
 
@@ -145,7 +171,7 @@ namespace ApiPrueba
 
         private void btLunaClick(object sender, RoutedEventArgs e)
         {
-            tbApodoLuna.Text = "Apodo: " + listaPersonajes[12].apodo;
+            tbApodoLuna.Text = "Nombre completo: " + listaPersonajes[12].personaje;
             tbCasaLuna.Text = "Casa de Hogwarts: " + listaPersonajes[12].casaDeHogwarts;
             tbActorLuna.Text = "Actriz: " + listaPersonajes[12].interpretado_por;
 
@@ -156,6 +182,11 @@ namespace ApiPrueba
             btLuna.Background = image;
             btLuna.Content = "";
 
+        }
+
+        private void SearchBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            SearchBox.Text = "";
         }
     }
 
