@@ -52,7 +52,8 @@ namespace ApiPrueba
             {
                 btHarry.Visibility= Visibility.Visible;
                 spHarry.Visibility= Visibility.Visible;
-            }
+            }       
+
             if (SearchBox.Text.Equals(btHermione.Content))
             {
                 btHermione.Visibility = Visibility.Visible;
@@ -86,26 +87,29 @@ namespace ApiPrueba
 
 
 
-
         private void btNombre_Click(object sender, RoutedEventArgs e)
         {
+           
+
+                tbApodoHarry.Text = "Nombre completo: " + listaPersonajes[0].personaje;
+                tbCasaHarry.Text = "Casa de Hogwarts: " + listaPersonajes[0].casaDeHogwarts;
+                tbActorHarry.Text = "Actor: " + listaPersonajes[0].interpretado_por;
 
 
-            tbApodoHarry.Text = "Nombre completo: " + listaPersonajes[0].personaje;
-            tbCasaHarry.Text = "Casa de Hogwarts: " + listaPersonajes[0].casaDeHogwarts;
-            tbActorHarry.Text = "Actor: " + listaPersonajes[0].interpretado_por;
+                // Establecer la imagen como fondo del botón
+                var image = new ImageBrush();
+                image.ImageSource = new BitmapImage(new Uri(listaPersonajes[0].imagen));
+                btHarry.Background = image;
+                btHarry.Content = "";
+            }
+
+           
 
 
-            // Establecer la imagen como fondo del botón
-            var image = new ImageBrush();
-            image.ImageSource = new BitmapImage(new Uri(listaPersonajes[0].imagen));
-            btHarry.Background = image;
-            btHarry.Content = "";
-
-
-        }
 
         
+
+
 
         private void btHermioneClick(object sender, RoutedEventArgs e)
         {

@@ -6,14 +6,15 @@
 
     <Application.Resources>
         <Style TargetType="TextBlock">
-            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Harry P"/>
+            <Setter Property="TextElement.FontFamily" Value="#Harry P"/>
             <Setter Property="FontSize" Value="30"/>
         </Style>
 
         <Style TargetType="Button">
-            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Harry P"/>
+            <Setter Property="TextElement.FontFamily" Value="#Harry P"/>
             <Setter Property="FontSize" Value="30"/>
         </Style>
+        
 
     </Application.Resources>
 

@@ -8,7 +8,7 @@
         
         Title="El Ejercito De Dumbledore" Height="1200" Width="900">
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\FP\Documents\GitHub\IriaSM\DI\ApiPrueba\Imagenes\fondo.jpg"/>
+        <ImageBrush ImageSource="C:\Users\FP\Documents\GitHub\IriaSM\DI\ApiPrueba\Imagenes\fondo.jpg" Stretch="UniformToFill"/>
     </Window.Background>
 
 
@@ -17,42 +17,52 @@
     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-
-        </Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="570"/>
+            </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="0"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+
+            
 
 
             </Grid.RowDefinitions>
 
-            <StackPanel Grid.Row="0" Grid.Column="0" >
-
-            <TextBlock 
+            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" >
+                <TextBlock                            
                TextWrapping="Wrap" Text="EL EJÉRCITO DE DUMBLEDORE" 
-               TextAlignment="Right"
+               TextAlignment="Center"
                Margin="0,10,0,0"
-               FontSize="30" FontWeight="Bold" 
-               Foreground="Red"  />
+               FontSize="50" FontWeight="Bold"                   
+               Foreground="white"/>
+            </StackPanel>
 
-            <Label Margin="0,0,0,0" Content="Escribe el personaje que deseas mostrar" FontSize="55" Foreground="red"/>
 
-            <TextBox
-                
+
+            <StackPanel Grid.Row="1" Grid.Column="0" >
+                <TextBlock 
+                    TextWrapping="Wrap"
+                    Text="Busca un personaje:"
+                    Margin="70,30,0,0"
+                    FontSize="40"
+                    Foreground="white"/>
+                              
+            <TextBox              
                 Name="SearchBox"
                 GotFocus="SearchBox_GotFocus"
                 Grid.Row="0" Grid.Column="0"
                 TextAlignment="Left"
-                Margin="-210,10,0,0"
+                Margin="-50,10,0,0"
                 Width="200"
                 Height="35"
                 FontSize="20">
@@ -65,7 +75,7 @@
                 Name="btBuscar" 
                 Click="btBuscar_Click"
                 Grid.Row="0" Grid.Column="0"
-                Margin="-210,10,0,50"
+                Margin="-50,10,0,50"
                 Width="200"
                 Height="35">
             </Button>
@@ -81,16 +91,16 @@
                 Name="btHarry" 
                 Content="Harry" 
                 FontSize="20" 
-                Background="Black" Foreground="Red" 
+                Background="Black" Foreground="white" 
                 Margin="75,0,75,5"
                 Click="btNombre_Click"/>
 
 
             <StackPanel Name="spHarry" Visibility="Collapsed" Margin="45" Grid.Row="2" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoHarry" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaHarry" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorHarry" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoHarry" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaHarry" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorHarry" Text=""  FontSize="25" Foreground="white"/>
 
 
             </StackPanel> 
@@ -104,16 +114,16 @@
 			Name="btHermione"
 			Content="Hermione"
 			FontSize="20"
-			Background="Black" Foreground="Red"
+			Background="Black" Foreground="white"
 			Click="btHermioneClick" Margin="75,19,75,19"/>
 
 
 
             <StackPanel Name="spHermione" Visibility="Collapsed" Margin="45" Grid.Row="3" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoHermione" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaHermione" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorHermione" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoHermione" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaHermione" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorHermione" Text=""  FontSize="25" Foreground="white"/>
 
         </StackPanel>
 
@@ -124,7 +134,7 @@
                 Name="btRon" 
                 Content="Ron" 
                 FontSize="20" 
-                Background="Black" Foreground="Red" 
+                Background="Black" Foreground="white" 
                 Click="btRonClick" Margin="75,21,75,22"/>
 
 
@@ -132,9 +142,9 @@
 
             <StackPanel Name="spRon" Visibility="Collapsed" Margin="45" Grid.Row="4" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoRon" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaRon" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorRon" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoRon" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaRon" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorRon" Text=""  FontSize="25" Foreground="white"/>
 
         </StackPanel>
 
@@ -145,15 +155,15 @@
                 Name="btGinny" 
                 Content="Ginny" 
                 FontSize="20" 
-                Background="Black" Foreground="Red" 
+                Background="Black" Foreground="white" 
                 Click="btGinnyClick" Margin="75,21,75,21"/>
 
 
             <StackPanel Name="spGinny" Visibility="Collapsed" Margin="45" Grid.Row="5" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoGinny" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaGinny" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorGinny" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoGinny" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaGinny" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorGinny" Text=""  FontSize="25" Foreground="white"/>
 
         </StackPanel>
 
@@ -164,16 +174,16 @@
                 Name="btNeville" 
                 Content="Neville" 
                 FontSize="20" 
-                Background="Black" Foreground="Red" 
+                Background="Black" Foreground="white" 
                 Click="btNevilleClick" Margin="75,21,75,21"/>
 
 
 
             <StackPanel Name="spNev" Visibility="Collapsed" Margin="45" Grid.Row="6" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoNev" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaNev" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorNev" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoNev" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaNev" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorNev" Text=""  FontSize="25" Foreground="white"/>
 
         </StackPanel>
 
@@ -186,16 +196,16 @@
                 Name="btLuna" 
                 Content="Luna" 
                 FontSize="20" 
-                Background="Black" Foreground="Red" 
+                Background="Black" Foreground="white" 
                 Click="btLunaClick" Margin="75,21,75,21"/>
 
 
 
             <StackPanel Name="spLuna"  Visibility="Collapsed"  Margin="45" Grid.Row="7" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoLuna" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbCasaLuna" Text=""  FontSize="25" Foreground="Red"/>
-            <TextBlock  Name="tbActorLuna" Text=""  FontSize="25" Foreground="Red"/>
+            <TextBlock  Name="tbApodoLuna" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbCasaLuna" Text=""  FontSize="25" Foreground="white"/>
+            <TextBlock  Name="tbActorLuna" Text=""  FontSize="25" Foreground="white"/>
 
         </StackPanel>
 
