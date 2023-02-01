@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         
         Title="El Ejercito De Dumbledore" Height="1200" Width="900">
+
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\FP\Documents\GitHub\IriaSM\DI\ApiPrueba\Imagenes\fondo.jpg" Stretch="UniformToFill"/>
+        <ImageBrush ImageSource="C:\Users\FP\Documents\GitHub\IriaSM\DI\ApiPrueba\Imagenes\fondo3.jpg"/>
     </Window.Background>
 
 
@@ -48,7 +49,7 @@
                 <TextBlock 
                     TextWrapping="Wrap"
                     Text="Busca un personaje:"
-                    Margin="70,30,0,0"
+                    Margin="100,30,0,0"
                     FontSize="40"
                     Foreground="white"/>
                               
@@ -57,7 +58,7 @@
                     GotFocus="SearchBox_GotFocus"
                     Grid.Row="0" Grid.Column="0"
                     TextAlignment="Left"
-                    Margin="-50,10,0,0"
+                    Margin="0,10,0,0"
                     Width="200"
                     Height="35"
                     FontSize="20">
@@ -70,7 +71,7 @@
                     Name="btBuscar" 
                     Click="btBuscar_Click"
                     Grid.Row="0" Grid.Column="0"
-                    Margin="-50,10,0,50"
+                    Margin="0,10,0,50"
                     Width="200"
                     Height="35">
             </Button>
@@ -87,14 +88,16 @@
                 Content="Harry" 
                 FontSize="20" 
                 Background="Black" Foreground="white" 
+                Width="190"
+                Height="190"
                 Margin="75,0,75,5"
                 Click="btNombre_Click"/>
 
 
-            <StackPanel Name="spHarry" Visibility="Collapsed" Margin="45" Grid.Row="2" Grid.Column="1" >
-                <TextBlock  Name="tbApodoHarry" Text=""  FontSize="25" Foreground="white"/>
-                <TextBlock  Name="tbCasaHarry" Text=""  FontSize="25" Foreground="white"/>
-                <TextBlock  Name="tbActorHarry" Text=""  FontSize="25" Foreground="white"/>
+            <StackPanel  Name="spHarry" Visibility="Collapsed"  Margin="45" Grid.Row="2" Grid.Column="1" >
+                <TextBlock Name="tbApodoHarry" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbCasaHarry" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorHarry" Text=""  FontSize="30" Foreground="white"/>
             </StackPanel> 
 
 
@@ -105,14 +108,16 @@
 			Grid.Row="3" Grid.Column="0"
 			Name="btHermione"
 			Content="Hermione"
+            Width="190"
+            Height="190"
 			FontSize="20"
 			Background="Black" Foreground="white"
 			Click="btHermioneClick" Margin="75,19,75,19"/>
 
         <StackPanel Name="spHermione" Visibility="Collapsed" Margin="45" Grid.Row="3" Grid.Column="1" >
-             <TextBlock  Name="tbApodoHermione" Text=""  FontSize="25" Foreground="white"/>
-             <TextBlock  Name="tbCasaHermione" Text=""  FontSize="25" Foreground="white"/>
-             <TextBlock  Name="tbActorHermione" Text=""  FontSize="25" Foreground="white"/>
+                <TextBlock  Name="tbApodoHermione" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbCasaHermione" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorHermione" Text=""  FontSize="30" Foreground="white"/>
         </StackPanel>
 
         <!--RON POSICION 2-->
@@ -120,15 +125,17 @@
         <Button Grid.Row="4" Grid.Column="0" 
                 Visibility="Collapsed"
                 Name="btRon" 
+                Width="190"
+                Height="190"
                 Content="Ron" 
                 FontSize="20" 
                 Background="Black" Foreground="white" 
                 Click="btRonClick" Margin="75,21,75,22"/>
 
         <StackPanel Name="spRon" Visibility="Collapsed" Margin="45" Grid.Row="4" Grid.Column="1" >
-            <TextBlock  Name="tbApodoRon" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbCasaRon" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbActorRon" Text=""  FontSize="25" Foreground="white"/>
+                <TextBlock  Name="tbApodoRon" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbCasaRon" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorRon" Text=""  FontSize="30" Foreground="white"/>
          </StackPanel>
 
         <!--GINNY POSICION 8-->
@@ -136,6 +143,8 @@
         <Button Grid.Row="5" Grid.Column="0" 
                 Visibility="Collapsed"
                 Name="btGinny" 
+                Width="190"
+                Height="190"
                 Content="Ginny" 
                 FontSize="20" 
                 Background="Black" Foreground="white" 
@@ -143,9 +152,9 @@
 
 
         <StackPanel Name="spGinny" Visibility="Collapsed" Margin="45" Grid.Row="5" Grid.Column="1" >
-                <TextBlock  Name="tbApodoGinny" Text=""  FontSize="25" Foreground="white"/>
-                <TextBlock  Name="tbCasaGinny" Text=""  FontSize="25" Foreground="white"/>
-                <TextBlock  Name="tbActorGinny" Text=""  FontSize="25" Foreground="white"/>
+                <TextBlock  Name="tbApodoGinny" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbCasaGinny" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorGinny" Text=""  FontSize="30" Foreground="white"/>
         </StackPanel>
 
         <!--NEVILLE POSICION 11-->
@@ -153,6 +162,8 @@
         <Button Grid.Row="6" Grid.Column="0" 
                 Visibility="Collapsed"
                 Name="btNeville" 
+                Width="190"
+                Height="190"
                 Content="Neville" 
                 FontSize="20" 
                 Background="Black" Foreground="white" 
@@ -160,9 +171,9 @@
 
         <StackPanel Name="spNev" Visibility="Collapsed" Margin="45" Grid.Row="6" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoNev" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbCasaNev" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbActorNev" Text=""  FontSize="25" Foreground="white"/>
+                <TextBlock  Name="tbApodoNev" Text=""  FontSize="30" Foreground="white"/>
+            <TextBlock  Name="tbCasaNev" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorNev" Text=""  FontSize="30" Foreground="white"/>
 
         </StackPanel>
 
@@ -173,6 +184,8 @@
         <Button Grid.Row="7" Grid.Column="0" 
                 Visibility="Collapsed"
                 Name="btLuna" 
+                Width="190"
+                Height="190"
                 Content="Luna" 
                 FontSize="20" 
                 Background="Black" Foreground="white" 
@@ -180,9 +193,9 @@
 
         <StackPanel Name="spLuna"  Visibility="Collapsed"  Margin="45" Grid.Row="7" Grid.Column="1" >
 
-            <TextBlock  Name="tbApodoLuna" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbCasaLuna" Text=""  FontSize="25" Foreground="white"/>
-            <TextBlock  Name="tbActorLuna" Text=""  FontSize="25" Foreground="white"/>
+                <TextBlock  Name="tbApodoLuna" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbCasaLuna" Text=""  FontSize="30" Foreground="white"/>
+                <TextBlock  Name="tbActorLuna" Text=""  FontSize="30" Foreground="white"/>
 
         </StackPanel>
 

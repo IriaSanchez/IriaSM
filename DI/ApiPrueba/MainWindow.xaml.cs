@@ -50,32 +50,38 @@ namespace ApiPrueba
            
             if(SearchBox.Text.Equals( btHarry.Content))
             {
+                SearchBox.Text = "";
                 btHarry.Visibility= Visibility.Visible;
                 spHarry.Visibility= Visibility.Visible;
             }       
 
             if (SearchBox.Text.Equals(btHermione.Content))
             {
+                SearchBox.Text = "";
                 btHermione.Visibility = Visibility.Visible;
                 spHermione.Visibility = Visibility.Visible;
             }
             if (SearchBox.Text.Equals(btRon.Content))
             {
+                SearchBox.Text = "";
                 btRon.Visibility = Visibility.Visible;
                 spRon.Visibility = Visibility.Visible;
             }
             if (SearchBox.Text.Equals(btGinny.Content))
             {
+                SearchBox.Text = "";
                 btGinny.Visibility = Visibility.Visible;
                 spGinny.Visibility = Visibility.Visible;
             }
             if (SearchBox.Text.Equals(btNeville.Content))
             {
+                SearchBox.Text = "";
                 btNeville.Visibility = Visibility.Visible;
                 spNev.Visibility = Visibility.Visible;
             }
             if (SearchBox.Text.Equals(btLuna.Content))
             {
+                SearchBox.Text = "";
                 btLuna.Visibility = Visibility.Visible;
                 spLuna.Visibility = Visibility.Visible;
             }
