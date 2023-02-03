@@ -12,15 +12,16 @@ public class Products implements Serializable {
     private String QuantityPerUnit;
     private BigDecimal UnitPrice;
     private short UnitsInStock;
-    private short UnitsInOrder;
+    private short UnitsOnOrder;
     private short ReorderLevel;
     private boolean Discontinued;
     private Categories categorie;
+    private Suppliers supplier;
 
     public Products() {
     }
 
-    public Products(int productID, String productName, int supplierID, int categoryID, String quantityPerUnit, BigDecimal unitPrice, short unitsInStock, short unitsInOrder, short reorderLevel, boolean discontinued) {
+    public Products(int productID, String productName, int supplierID, int categoryID, String quantityPerUnit, BigDecimal unitPrice, short unitsInStock, short unitsOnOrder, short reorderLevel, boolean discontinued, Categories categorie, Suppliers supplier) {
         ProductID = productID;
         ProductName = productName;
         SupplierID = supplierID;
@@ -28,7 +29,22 @@ public class Products implements Serializable {
         QuantityPerUnit = quantityPerUnit;
         UnitPrice = unitPrice;
         UnitsInStock = unitsInStock;
-        UnitsInOrder = unitsInOrder;
+        UnitsOnOrder = unitsOnOrder;
+        ReorderLevel = reorderLevel;
+        Discontinued = discontinued;
+        this.categorie = categorie;
+        this.supplier = supplier;
+    }
+
+
+    public Products(String productName, int supplierID, int categoryID, String quantityPerUnit, BigDecimal unitPrice, short unitsInStock, short unitsOnOrder, short reorderLevel, boolean discontinued) {
+        ProductName = productName;
+        SupplierID = supplierID;
+        CategoryID = categoryID;
+        QuantityPerUnit = quantityPerUnit;
+        UnitPrice = unitPrice;
+        UnitsInStock = unitsInStock;
+        UnitsOnOrder = unitsOnOrder;
         ReorderLevel = reorderLevel;
         Discontinued = discontinued;
     }
@@ -89,12 +105,12 @@ public class Products implements Serializable {
         UnitsInStock = unitsInStock;
     }
 
-    public short getUnitsInOrder() {
-        return UnitsInOrder;
+    public short getUnitsOnOrder() {
+        return UnitsOnOrder;
     }
 
-    public void setUnitsInOrder(short unitsInOrder) {
-        UnitsInOrder = unitsInOrder;
+    public void setUnitsOnOrder(short unitsOnOrder) {
+        UnitsOnOrder = unitsOnOrder;
     }
 
     public short getReorderLevel() {
@@ -121,6 +137,15 @@ public class Products implements Serializable {
         this.categorie = categorie;
     }
 
+    public Suppliers getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Suppliers supplier) {
+        this.supplier = supplier;
+    }
+
+
     @Override
     public String toString() {
         return "Products{" +
@@ -131,10 +156,11 @@ public class Products implements Serializable {
                 ", QuantityPerUnit='" + QuantityPerUnit + '\'' +
                 ", UnitPrice=" + UnitPrice +
                 ", UnitsInStock=" + UnitsInStock +
-                ", UnitsInOrder=" + UnitsInOrder +
+                ", UnitsOnOrder=" + UnitsOnOrder +
                 ", ReorderLevel=" + ReorderLevel +
                 ", Discontinued=" + Discontinued +
                 ", categorie=" + categorie +
+                ", supplier=" + supplier +
                 '}';
     }
 }

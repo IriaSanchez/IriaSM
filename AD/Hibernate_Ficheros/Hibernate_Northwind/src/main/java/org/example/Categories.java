@@ -17,6 +17,11 @@ public class Categories implements Serializable {
         Description = description;
     }
 
+    public Categories(String categoryName, String description) {
+        CategoryName = categoryName;
+        Description = description;
+    }
+
     public int getCategoryID() {
         return CategoryID;
     }

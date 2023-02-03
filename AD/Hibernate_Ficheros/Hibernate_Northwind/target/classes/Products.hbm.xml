@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
@@ -6,25 +5,29 @@
 
 <hibernate-mapping>
     <class name="org.example.Products" table="Products">
-        <id name="ProductId" column="ProductId">
+        <id name="ProductID" column="ProductID">
             <generator class="native"></generator>
         </id>
-        <property name="ProductID" type="int" column="ProductID"/>
-        <property name="ProductName" type="string" column="ProductName"/>
+        <property name="ProductName" type="ntext" column="ProductName"/>
         <property name="SupplierID" type="int" column="SupplierID"/>
         <property name="CategoryID" type="int" column="CategoryID"/>
-        <property name="QuantityPerUnit" type="string" column="QuantityPerUnit"/>
-        <property name="UnitPrice" type="big-decimal" column="UnitPrice"/>
+        <property name="QuantityPerUnit" type="ntext" column="QuantityPerUnit"/>
+        <property name="UnitPrice" column="UnitPrice"/>
         <property name="UnitsInStock" type="short" column="UnitsInStock"/>
-        <property name="UnitsInOrder" type="short" column="UnitsInOrder"/>
+        <property name="UnitsOnOrder" type="short" column="UnitsOnOrder"/>
         <property name="ReorderLevel" type="short" column="ReorderLevel"/>
         <property name="Discontinued" type="boolean" column="Discontinued"/>
 
 
 
 
-        <many-to-one name="Categories" column="CategoryId" not-null="true"
+        <many-to-one name="categorie" column="CategoryID" not-null="true"
                      insert="false" update="false"/>
+
+        <many-to-one name="supplier" column="SupplierID" not-null="true"
+                     insert="false" update="false"/>
+
+
 
 
     </class>
@@ -36,6 +39,3 @@
 
 
 
-        private short UnitsInOrder;
-        private short ReorderLevel;
-        private boolean Discontinued;*/

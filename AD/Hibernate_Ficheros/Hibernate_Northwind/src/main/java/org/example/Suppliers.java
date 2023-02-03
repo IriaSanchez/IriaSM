@@ -9,7 +9,7 @@ public class Suppliers implements Serializable {
     private String CompanyName;
     private String ContactName ;
     private String ContactTitle;
-    private String Adress ;
+    private String Address ;
     private String City ;
     private String Region;
     private String PostalCode ;
@@ -26,7 +26,22 @@ public class Suppliers implements Serializable {
         CompanyName = companyName;
         ContactName = contactName;
         ContactTitle = contactTitle;
-        Adress = adress;
+        Address = adress;
+        City = city;
+        Region = region;
+        PostalCode = postalCode;
+        Country = country;
+        Phone = phone;
+        Fax = fax;
+        HomePage = homePage;
+    }
+
+
+    public Suppliers(String companyName, String contactName, String contactTitle, String address, String city, String region, String postalCode, String country, String phone, String fax, String homePage) {
+        CompanyName = companyName;
+        ContactName = contactName;
+        ContactTitle = contactTitle;
+        Address = address;
         City = city;
         Region = region;
         PostalCode = postalCode;
@@ -68,12 +83,12 @@ public class Suppliers implements Serializable {
         ContactTitle = contactTitle;
     }
 
-    public String getAdress() {
-        return Adress;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setAdress(String adress) {
-        Adress = adress;
+    public void setAddress(String address) {
+        Address = address;
     }
 
     public String getCity() {
@@ -140,7 +155,7 @@ public class Suppliers implements Serializable {
                 ", CompanyName='" + CompanyName + '\'' +
                 ", ContactName='" + ContactName + '\'' +
                 ", ContactTitle='" + ContactTitle + '\'' +
-                ", Adress='" + Adress + '\'' +
+                ", Address='" + Address + '\'' +
                 ", City='" + City + '\'' +
                 ", Region='" + Region + '\'' +
                 ", PostalCode='" + PostalCode + '\'' +

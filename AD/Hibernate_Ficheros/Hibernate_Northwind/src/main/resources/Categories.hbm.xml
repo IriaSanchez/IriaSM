@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.Categories" table="Categories">
+        <id name="CategoryID" column="CategoryID">
+            <generator class="native"></generator>
+        </id>
+        <property name="CategoryName" type="ntext" column="CategoryName"/>
+        <property name="Description" type="ntext" column="Description"/>
+
+
+    </class>
+</hibernate-mapping>
