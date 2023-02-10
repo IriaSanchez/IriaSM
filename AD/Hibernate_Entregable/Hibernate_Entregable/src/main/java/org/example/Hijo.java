@@ -11,6 +11,23 @@ public class Hijo implements Serializable {
     private String nombre;
     private int idPersonaje;
 
+
+
+    private Personaje personaje;
+
+    @ManyToOne
+    @JoinColumn(name = "idPersonaje", insertable = false,updatable = false)
+    public Personaje getPersonaje() {
+        return personaje;
+    }
+
+    public void setPersonaje(Personaje personaje) {
+        this.personaje = personaje;
+    }
+
+
+
+
     public Hijo() {
     }
 

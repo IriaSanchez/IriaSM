@@ -1,6 +1,7 @@
 package org.example;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 @Entity
 @Table(name = "Personajes")
@@ -13,6 +14,9 @@ public class Personaje implements Serializable {
     private boolean estudianteDeHogwarts;
     private String casaDeHogwarts;
     private String interpretadoPor;
+
+    private Set<Hijo> listaHijos;
+
 
     public Personaje() {
     }
@@ -81,6 +85,19 @@ public class Personaje implements Serializable {
         this.interpretadoPor = interpretadoPor;
     }
 
+
+
+    @OneToMany (mappedBy = "personaje")
+    public Set<Hijo> getListaHijos() {
+        return listaHijos;
+    }
+
+    public void setListaHijos(Set<Hijo> listaHijos) {
+        this.listaHijos = listaHijos;
+    }
+
+
+
     @Override
     public String toString() {
         return "Personaje{" +
@@ -90,7 +107,11 @@ public class Personaje implements Serializable {
                 ", estudianteDeHogwarts=" + estudianteDeHogwarts +
                 ", casaDeHogwarts='" + casaDeHogwarts + '\'' +
                 ", interpretadoPor='" + interpretadoPor + '\'' +
+                ", listaHijos=" + listaHijos +
                 '}';
     }
+
+
+
 }
 

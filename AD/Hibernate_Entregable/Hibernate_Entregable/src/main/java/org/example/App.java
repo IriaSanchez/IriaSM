@@ -1,7 +1,8 @@
 package org.example;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -42,40 +43,41 @@ public class App
             JsonArray objetoJson = new Gson().fromJson(sb.toString(), JsonArray.class);
 
 
-            for(int i=0; i<objetoJson.size();i++){
+            for(int i = 0; i<objetoJson.size();i++){
 
+                //Objeto personaje
                 Personaje personaje = new Personaje();
+
+                //Recogemos los datos del personaje,apodo,etc;
                 personaje.setPersonaje(objetoJson.get(i).getAsJsonObject().get("personaje").getAsString());
-
                 personaje.setApodo(objetoJson.get(i).getAsJsonObject().get("apodo").getAsString());
-
                 personaje.setEstudianteDeHogwarts(objetoJson.get(i).getAsJsonObject().get("estudianteDeHogwarts").getAsBoolean());
-
                 personaje.setCasaDeHogwarts(objetoJson.get(i).getAsJsonObject().get("casaDeHogwarts").getAsString());
-
                 personaje.setInterpretadoPor(objetoJson.get(i).getAsJsonObject().get("interpretado_por").getAsString());
 
+                //Llamamos al método
                 crearPersonaje(personaje);
 
 
-
-
+                //Formateamos resultados de los hijos
                 JsonArray hijos = objetoJson.get(i).getAsJsonObject().get("hijos").getAsJsonArray();
 
-                for (int j = 0; j<hijos.size();j++){
+                for (int j = 0; j < hijos.size();j++){
 
+                    //Objeto hijo
                     Hijo hijo = new Hijo();
                     hijo.setNombre(hijos.get(j).getAsString());
                     hijo.setIdPersonaje(personaje.getId());
+
+                    //Llamamos al método
                     crearHijo(hijo);
 
-
                 }
-
             }
 
 
 
+            leerPersonaje();
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -86,6 +88,19 @@ public class App
         } finally {
             connection.disconnect();
         }
+    }
+
+    public static void leerPersonaje(){
+
+        //Para acceder a la base de datos
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        //Iniciamos la transacción
+        Transaction transaction = session.beginTransaction();
+
+        Personaje personaje = session.get(Personaje.class,1);
+        System.out.println(personaje);
+        transaction.commit();
+
     }
 
 
@@ -116,8 +131,4 @@ public class App
         //HibernateUtil.closeSessionFactory();
 
     }
-
-
-
-
     }
