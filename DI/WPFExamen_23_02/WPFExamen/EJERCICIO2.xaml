@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPFExamen.EJERCICIO2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFExamen"
+        mc:Ignorable="d"
+        Title="EJERCICIO2" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+            
+        <StackPanel Grid.Row="0">
+            <CheckBox Name="cbEjercicio2" Content="0" IsChecked="True" Click="cbEjercicio2_Click"/>
+            <CheckBox Name="cb2Ejercicio2" Content="1" IsChecked="True" Click="cb2Ejercicio2_Click"/> 
+        </StackPanel>
+
+        <Button Grid.Row="1" Name="btEjercicio2" Height="30" Click="btEjercicio2_Click">Concatenar</Button>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+
+            <Label Name="lbEjercicio2"></Label>
+        </StackPanel>
+     
+        
+    </Grid>
+</Window>
